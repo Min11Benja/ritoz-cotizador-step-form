@@ -8,3 +8,9 @@ function changeFondo(srcFondo) {
     document.getElementById('zoom-preview-img').href = srcFondo;
     
 }
+
+function changeParentAmount(inputIdToEdit, qtyClickSelected){
+    document.getElementById(inputIdToEdit).setAttribute('data-price',qtyClickSelected);   
+    //document.getElementById(inputIdToEdit).setAttribute('data-total',qtyClickSelected);  
+}
+
