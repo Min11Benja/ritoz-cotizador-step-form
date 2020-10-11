@@ -80,13 +80,13 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-5 content_sticky magnific-gallery">
                                 <figure>
-                                    <a href="img/product_1_large.jpg" title="MacBook Air 13 Inch" data-effect="mfp-zoom-in">
-                                        <img src="img/product_1.jpg" alt="" class="img-fluid add_top_50">
+                                    <a id="zoom-preview-img" href="img/product_1_large.jpg" title="Ritoz" data-effect="mfp-zoom-in">
+                                        <img id="product-preview-img" src="img/product_1.jpg" alt="" class="img-fluid add_top_50">
                                     </a>
                                 </figure>
                                 <div class="text-center add_top_30">
-                                    <a href="img/product_1_large_2.jpg" class="btn_2" title="MacBook Air 13 Inch" data-effect="mfp-zoom-in">Ver galeria de imagenes</a>
-                                    <a href="img/product_1_large_3.jpg" title="MacBook Air 13 Inch" data-effect="mfp-zoom-in"></a>
+                                   <!-- <a href="img/product_1_large_2.jpg" class="btn_2" title="MacBook Air 13 Inch" data-effect="mfp-zoom-in">Ver galeria de imagenes</a>-->
+                                  <!--  <a href="img/product_1_large_3.jpg" title="MacBook Air 13 Inch" data-effect="mfp-zoom-in"></a>-->
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -105,12 +105,11 @@
                                     -->
                                     <div class="group_items">
                                         <h4>Sombreros</h4>
-
-
                                         <!-- Sombrero Speedy Gonzales -->
-                                        <div class="item">
+                                        <!--changeFondo(id_toChange,srcFondo) product-preview-img-->
+                                        <div class="item" >
                                             <input data-price="6" data-label="Sombrero Speedy Gonzales" id="answer_1_group_1" type="checkbox" name="answer_group_1" value="Sombrero Speedy Gonzales" class="">
-                                            <label for="answer_1_group_1" class="clearfix">
+                                            <label for="answer_1_group_1" class="clearfix" onclick="changeFondo('images/speedy-gonzales.png')">
                                                 <span class="item_thumb">
                                                     <img src="images/speedy-gonzales.png" alt="" class="img-fluid">
                                                 </span>
@@ -151,7 +150,7 @@
                                         <!-- Sombrero 8 segundos -->
                                         <div class="item">
                                             <input data-price="12" data-label="Sombrero Ocho Segundos" id="answer_2_group_1" name="answer_group_1" type="checkbox" value="Sombrero Ocho Segundos" class="">
-                                            <label for="answer_2_group_1" class="clearfix">
+                                            <label for="answer_2_group_1" class="clearfix" onclick="changeFondo('images/8-segundos.png')">
                                                 <span class="item_thumb">
                                                     <img src="images/8-segundos.png" alt="" class="img-fluid">
                                                 </span>
@@ -189,7 +188,7 @@
                                         <!-- Sombrero Sonora -->
                                         <div class="item">
                                             <input data-price="12" data-label="Sombrero Sonora" id="answer_3_group_1" name="answer_group_1" type="checkbox" value="Sombrero Sonora" class="">
-                                            <label for="answer_3_group_1" class="clearfix">
+                                            <label for="answer_3_group_1" class="clearfix" onclick="changeFondo('images/sonora.png')">
                                                 <span class="item_thumb">
                                                     <img src="images/sonora.png" alt="" class="img-fluid">
                                                 </span>
@@ -227,7 +226,7 @@
                                         <!-- Sombrero Alicia -->
                                         <div class="item">
                                             <input data-price="6" data-label="Sombrero Alicia" id="answer_4_group_1" name="answer_group_1" type="checkbox" value="Sombrero Alicia" class="">
-                                            <label for="answer_4_group_1" class="clearfix">
+                                            <label for="answer_4_group_1" class="clearfix" onclick="changeFondo('images/alicia.png')">
                                                 <span class="item_thumb">
                                                     <img src="images/alicia.png" alt="" class="img-fluid">
                                                 </span>
@@ -265,7 +264,7 @@
                                         <!-- Sombrero Gringo Viejo -->
                                         <div class="item">
                                             <input data-price="6" data-label="Sombrero Gringo Viejo" id="answer_5_group_1" name="answer_group_1" type="checkbox" value="Sombrero Gringo Viejo" class="">
-                                            <label for="answer_5_group_1" class="clearfix">
+                                            <label for="answer_5_group_1" class="clearfix" onclick="changeFondo('images/gringo-viejo.png')">
                                                 <span class="item_thumb">
                                                     <img src="images/gringo-viejo.png" alt="" class="img-fluid">
                                                 </span>
@@ -303,7 +302,7 @@
                                         <!-- Sombrero de Lona Large -->
                                         <div class="item">
                                             <input data-price="6" data-label="Sombrero de Lona L" id="answer_6_group_1" name="answer_group_1" type="checkbox" value="Sombrero de Lona L" class="">
-                                            <label for="answer_6_group_1" class="clearfix">
+                                            <label for="answer_6_group_1" class="clearfix" onclick="changeFondo('img/processor_1.jpg')">
                                                 <span class="item_thumb">
                                                     <img src="img/processor_1.jpg" alt="" class="img-fluid">
                                                 </span>
@@ -340,7 +339,7 @@
                                         <!-- Sombrero de Lona Extra Large -->
                                         <div class="item">
                                             <input data-price="6" data-label="Sombrero de Lona XL" id="answer_7_group_1" name="answer_group_1" type="checkbox" value="Sombrero de Lona XL" class="">
-                                            <label for="answer_7_group_1" class="clearfix">
+                                            <label for="answer_7_group_1" class="clearfix" onclick="changeFondo('img/processor_1.jpg')">
                                                 <span class="item_thumb">
                                                     <img src="img/processor_1.jpg" alt="" class="img-fluid">
                                                 </span>
@@ -386,7 +385,7 @@
                                         <!--Paquete de Pulseras Artesanales-->
                                         <div class="item">
                                             <input data-price="92" data-label="Paquete de Pulseras Artesanales" id="answer_1_group_2" type="checkbox" name="answer_group_2" value="Paquete de Pulseras Artesanales" class="">
-                                            <label for="answer_1_group_2" class="clearfix">
+                                            <label for="answer_1_group_2" class="clearfix" onclick="changeFondo('images/paquete-pulseras.png')">
                                                 <span class="item_thumb">
                                                     <img src="images/paquete-pulseras.png" alt="" class="img-fluid">
                                                 </span>
@@ -400,7 +399,7 @@
                                         <!--Funda  de Celular Vaquera-->
                                         <div class="item">
                                             <input data-price="92" data-label="Funda  de Celular Vaquera" id="answer_2_group_2" type="checkbox" name="answer_group_2" value="Funda  de Celular Vaquera" class="">
-                                            <label for="answer_2_group_2" class="clearfix">
+                                            <label for="answer_2_group_2" class="clearfix" onclick="changeFondo('images/funda-cel-vaquera.png')">
                                                 <span class="item_thumb">
                                                     <img src="images/funda-cel-vaquera.png" alt="" class="img-fluid">
                                                 </span>
@@ -433,7 +432,7 @@
                                         <!--Resorteras -->
                                         <div class="item">
                                             <input data-price="92" data-label="Resorteras" id="answer_3_group_2" type="checkbox" name="answer_group_2" value="Resorteras" class="">
-                                            <label for="answer_3_group_2" class="clearfix">
+                                            <label for="answer_3_group_2" class="clearfix" onclick="changeFondo('img/product_2.jpg')">
                                                 <span class="item_thumb">
                                                     <img src="img/product_2.jpg" alt="" class="img-fluid">
                                                 </span>
@@ -479,7 +478,7 @@
                                         <!--Gorra Galoneada Charra-->
                                         <div class="item">
                                             <input data-price="6" data-label="Gorra Galoneada Charra" id="answer_1_group_3" type="checkbox" name="answer_group_3" value="Gorra Galoneada Charra" class="">
-                                            <label for="answer_1_group_3" class="clearfix">
+                                            <label for="answer_1_group_3" class="clearfix" onclick="changeFondo('images/gorra-galoneada-charra.png')">
                                                 <span class="item_thumb">
                                                     <img src="images/gorra-galoneada-charra.png" alt="" class="img-fluid">
                                                 </span>
@@ -512,7 +511,7 @@
                                         <!--Gorra Galoneada Charra-->
                                         <div class="item">
                                             <input data-price="6" data-label="Gorra Galoneada de Estados" id="answer_2_group_3" name="answer_group_3" type="checkbox" value="Gorra Galoneada de Estados" class="">
-                                            <label for="answer_2_group_3" class="clearfix">
+                                            <label for="answer_2_group_3" class="clearfix" onclick="changeFondo('images/gorra-galoneada-estados.png')">
                                                 <span class="item_thumb">
                                                     <img src="images/gorra-galoneada-estados.png" alt="" class="img-fluid">
                                                 </span>
@@ -546,7 +545,7 @@
                                         <!--Gorra Red Eagle-->
                                         <div class="item">
                                             <input data-price="6" data-label="Gorra Red Eagle" id="answer_3_group_3" name="answer_group_3" type="checkbox" value="Gorra Red Eagle" class="">
-                                            <label for="answer_3_group_3" class="clearfix">
+                                            <label for="answer_3_group_3" class="clearfix" onclick="changeFondo('img/memory_3.jpg')">
                                                 <span class="item_thumb">
                                                     <img src="img/memory_3.jpg" alt="" class="img-fluid">
                                                 </span>
@@ -587,7 +586,7 @@
                                         <!--Cartera Texana-->
                                         <div class="item">
                                             <input data-price="6" data-label="Cartera Texana" id="answer_1_group_4" type="checkbox" name="answer_group_4" value="Cartera Texana" class="">
-                                            <label for="answer_1_group_4" class="clearfix">
+                                            <label for="answer_1_group_4" class="clearfix" onclick="changeFondo('images/cartera-texana.png')">
                                                 <span class="item_thumb">
                                                     <img src="images/cartera-texana.png" alt="" class="img-fluid">
                                                 </span>
@@ -621,7 +620,7 @@
                                         <!--Cartera Vaquera-->
                                         <div class="item">
                                             <input data-price="6" data-label="Cartera Vaquera" id="answer_2_group_4" name="answer_group_4" type="checkbox" value="Cartera Vaquera" class="">
-                                            <label for="answer_2_group_4" class="clearfix">
+                                            <label for="answer_2_group_4" class="clearfix" onclick="changeFondo('images/cartera-vaquera.png')">
                                                 <span class="item_thumb">
                                                     <img src="images/cartera-vaquera.png" alt="" class="img-fluid">
                                                 </span>
@@ -654,7 +653,7 @@
                                         <!--Cartera Vaquera-->
                                         <div class="item">
                                             <input data-price="6" data-label="Cartera Mexicana Galoneada" id="answer_3_group_4" name="answer_group_4" type="checkbox" value="Cartera Mexicana Galoneada" class="">
-                                            <label for="answer_3_group_4" class="clearfix">
+                                            <label for="answer_3_group_4" class="clearfix" onclick="changeFondo('img/memory_3.jpg')">
                                                 <span class="item_thumb">
                                                     <img src="img/memory_3.jpg" alt="" class="img-fluid">
                                                 </span>
@@ -696,7 +695,7 @@
                                         <!--Cinturón Vaquero Estilo Laser-->
                                         <div class="item">
                                             <input data-price="6" data-label="Cinturón Vaquero Estilo Laser" id="answer_1_group_5" type="checkbox" name="answer_group_4" value="Cinturón Vaquero Estilo Laser" class="">
-                                            <label for="answer_1_group_5" class="clearfix">
+                                            <label for="answer_1_group_5" class="clearfix" onclick="changeFondo('images/cinturon-vaquero-laser.png')">
                                                 <span class="item_thumb">
                                                     <img src="images/cinturon-vaquero-laser.png" alt="" class="img-fluid">
                                                 </span>
@@ -730,7 +729,7 @@
                                         <!--Cinturon de Herraje-->
                                         <div class="item">
                                             <input data-price="6" data-label="Cinturon de Herraje" id="answer_2_group_5" name="answer_group_4" type="checkbox" value="Cinturon de Herraje" class="">
-                                            <label for="answer_2_group_5" class="clearfix">
+                                            <label for="answer_2_group_5" class="clearfix" onclick="changeFondo('images/cinturon-herraje.png')">
                                                 <span class="item_thumb">
                                                     <img src="images/cinturon-herraje.png" alt="" class="img-fluid">
                                                 </span>
@@ -781,7 +780,7 @@
                                             <input data-price="64" data-label="Display de Sombreros de
  Palma" id="answers_6_1" type="checkbox" name="answers_5[]" value="Display de Sombreros de
  Palma">
-                                            <label for="answers_6_1" class="clearfix">
+                                            <label for="answers_6_1" class="clearfix" onclick="changeFondo('images/display-sombreros-palma.png')">
                                                 <span class="item_thumb">
                                                     <img src="images/display-sombreros-palma.png" alt="" class="img-fluid">
                                                 </span>
@@ -797,7 +796,7 @@
                                             <input data-price="36" data-label="Display  de
  Cartera Mexicana Galoneada" id="answers_2_1" name="answers_6[]" type="checkbox" value="Display  de
  Cartera Mexicana Galoneada" class="">
-                                            <label for="answers_2_1" class="clearfix">
+                                            <label for="answers_2_1" class="clearfix" onclick="changeFondo('images/display-cartera-galoneada.png')">
                                                 <span class="item_thumb">
                                                     <img src="images/display-cartera-galoneada.png" alt="" class="img-fluid">
                                                 </span>
@@ -814,7 +813,7 @@
                                             <input data-price="64" data-label="Display  de
  Pulsera Mexicana" id="answer_2_3" name="answers_6[]" type="checkbox" value="Display  de
  Pulsera Mexicana" class="">
-                                            <label for="answer_2_3" class="clearfix">
+                                            <label for="answer_2_3" class="clearfix" onclick="changeFondo('images/display-pulsera-mexicana.png')">
                                                 <span class="item_thumb">
                                                     <img src="images/display-pulsera-mexicana.png" alt="" class="img-fluid">
                                                 </span>
@@ -831,7 +830,7 @@
                                             <input data-price="24" data-label="Display  de
  Funda de Celular" id="answer_2_3" name="answers_6[]" type="checkbox" value="Display  de
  Funda de Celular 24" class="">
-                                            <label for="answer_2_3" class="clearfix">
+                                            <label for="answer_2_3" class="clearfix" onclick="changeFondo('img/optional_3.jpg')">
                                                 <span class="item_thumb">
                                                     <img src="img/optional_3.jpg" alt="" class="img-fluid">
                                                 </span>
@@ -845,7 +844,7 @@
                                         <!--Display  de Gorras-->
                                         <div class="item">
                                             <input data-price="36" data-label="Display  de Gorras" id="answer_2_3" name="answers_6[]" type="checkbox" value="Display  de Gorras 36" class="">
-                                            <label for="answer_2_3" class="clearfix">
+                                            <label for="answer_2_3" class="clearfix" onclick="changeFondo('img/optional_3.jpg')">
                                                 <span class="item_thumb">
                                                     <img src="img/optional_3.jpg" alt="" class="img-fluid">
                                                 </span>
@@ -864,32 +863,32 @@
                                 <!-- Last step ============================== -->
                                 <div class="submit step">
                                     <div class="question_title add_bottom_30">
-                                        <h3>Plase fill with your details</h3>
-                                        <p>Ei duo homero postea dignissim.</p>
+                                        <h3>Por favor llena los siguientes campos</h3>
+                                        <!--<p>Ei duo homero postea dignissim.</p>-->
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="first_last_name" class=" form-control" placeholder="First and Last name">
+                                        <input type="text" name="first_last_name" class=" form-control" placeholder="Nombre y apellido">
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" name="email" class=" form-control" placeholder="Your Email">
+                                        <input type="email" name="email" class=" form-control" placeholder="Tu Email">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="telephone" class="form-control" placeholder="Your Telephone">
+                                        <input type="text" name="telephone" class="form-control" placeholder="Tu telefono">
                                     </div>
                                     <div class="form-group add_bottom_30">
                                         <div class="styled-select">
                                             <select class="" name="country">
-                                                <option value="" selected>Select your country</option>
-                                                <option value="Europe">Europe</option>
-                                                <option value="Asia">Asia</option>
-                                                <option value="North America">North America</option>
-                                                <option value="South America">South America</option>
+                                                <option value="" selected>Escoje tu estado</option>
+                                                <option value="slp">San Luis Potosi</option>
+                                                <option value="mty">Monterrey</option>
+                                                <option value="qrt">Queretaro</option>
+                                                <option value="gdl">Guadalajara</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="checkbox_questions">
                                         <input name="terms" type="checkbox" class="icheck required" value="yes">
-                                        <label>Please accept <a href="#" data-toggle="modal" data-target="#terms-txt">terms and conditions</a>.</label>
+                                        <label>Por favor revisa &amp; acepta nuestros <a href="#" data-toggle="modal" data-target="#terms-txt">terminos &amp; condiciones</a>.</label>
                                     </div>
                                 </div>
                                 <!-- /Last step ============================== -->
@@ -969,20 +968,28 @@
     </div>
 
     <!-- COMMON SCRIPTS -->
+    
     <script src="js/jquery-2.2.4.min.js"></script>
+    
     <script src="js/common_scripts.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wizard_func_1.js"></script>
+    <script src="js/custom.js"></script>
     <!-- SPECIFIC SCRIPTS -->
     <script src="js/theia-sticky-sidebar.js"></script>
     <script type="text/javascript">
         jQuery('.content_sticky').theiaStickySidebar({
             additionalMarginTop: 30
         });
-
+        $(document).ready(function() {
+            function changeFondo(_urlfondo, id_toChange) {
+                console.log("changeFondo func -> ");
+                console.log("_urlfondo:" + _urlfondo);
+                console.log("id_toChange:" + id_toChange);
+                document.getElementById(id_toChange).style.backgroundImage = "url(" + _urlfondo + ")";
+            }
+        });
     </script>
 
-</body>
-
-</html>
+</body></html>
