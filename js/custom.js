@@ -11,6 +11,6 @@ function changeFondo(srcFondo) {
 
 function changeParentAmount(inputIdToEdit, qtyClickSelected){
     document.getElementById(inputIdToEdit).setAttribute('data-price',qtyClickSelected);   
-    //document.getElementById(inputIdToEdit).setAttribute('data-total',qtyClickSelected);  
+    document.getElementById(inputIdToEdit).setAttribute('data-total',qtyClickSelected);  
 }
 

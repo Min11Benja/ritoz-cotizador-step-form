@@ -8555,9 +8555,9 @@ k);if((j[1]||"").length<a){j[1]=j[1]||"";j[1]+=Array(a-j[1].length+1).join("0")}
    // Default options for text
 	  
 		var settings = $.extend({		
-		totallabel: "Total:",
-		detailslabel: "Order details",
-		currency:"$"		
+		totallabel: "VER RESUMEN:",
+		detailslabel: "Resumen de pedido",
+		currency:"#"		
 		}, options );
 
 // Initialize Variables
@@ -8916,9 +8916,10 @@ k);if((j[1]||"").length<a){j[1]=j[1]||"";j[1]+=Array(a-j[1].length+1).join("0")}
 			}
 		
 		}// End of UpdateDescriptions()
-     		
-	 $( "#bottom-wizard" ).append('<div id="price_total"><h3>' + settings.totallabel + ' </h3><label id="total_value"> ' + settings.currency + $.number(total,2) + ' </label></div><a id="details_bt" href="#0"><div id="order_details"></div></a>');	
-	 
+     		/*
+	 $( "#bottom-wizard" ).append('<div id="price_total"><h3>' + settings.totallabel + ' </h3><label id="total_value"> ' + settings.currency + $.number(total,2) + ' </label></div><a id="details_bt" href="#0"><div id="order_details"></div></a>');	*/
+      
+	 $( "#bottom-wizard" ).append('<div id="price_total"><h3>' + settings.totallabel + ' </h3></div><a id="details_bt" href="#0"><div id="order_details"></div></a>');
 	return this;
    
  };  // End of plugin
