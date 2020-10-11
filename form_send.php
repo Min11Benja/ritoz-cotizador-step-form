@@ -33,23 +33,29 @@
 	
 <?php
 						$mail = $_POST['email'];
-						$to = "test@domain.com";	/* YOUR EMAIL HERE */
-						$subject = "Quotation from CONFIGURATOR";
-						$headers = "From: Quotation from CONFIGURATOR <noreply@yourdomain.com>";
+						$to = "min11benja@gmail.com";	/* YOUR EMAIL HERE */
+						$subject = "Cotizacion de parte del cotizador automatizado RitoImportz";
+						$headers = "From: Cotizador Automatizado <noreply@ritozimports.com>";
 						$message = "DETAILS\n";
-						$message .= "Product: " . $_POST['answer_group_1'] . "\n";
-						$message .= "Processor: " . $_POST['answer_group_2'] . "\n";
-						$message .= "Memory: " . $_POST['answer_group_3'] . "\n";
-						$message .= "Storage: " . $_POST['answer_group_4'] . "\n";
+						$message .= "Sombreros: " . $_POST['answer_group_1'] . "\n";
+						$message .= "Accesorios: " . $_POST['answer_group_2'] . "\n";
+						$message .= "Gorras: " . $_POST['answer_group_3'] . "\n";
+						$message .= "Carteras: " . $_POST['answer_group_4'] . "\n";
 	
-						$message .= "\nOptional Products:\n" ;
+						$message .= "\nCinturones:\n" ;
 						foreach($_POST['answers_5'] as $value) 
 							{ 
 							$message .=   "- " .  trim(stripslashes($value)) . "\n"; 
 							};
+    
+                        $message .= "\nDisplays:\n" ;
+						foreach($_POST['answers_6'] as $value) 
+							{ 
+							$message .=   "- " .  trim(stripslashes($value)) . "\n"; 
+							};
 	
-						$message .= "\nTOTAL: " . $_POST['hidden_total'] . "\n";
-						$message .= "\nUSER DETAILS" ;
+						$message .= "\nTOTAL PRODUCTOS: " . $_POST['hidden_total'] . "\n";
+						$message .= "\nDETALLES DEL USUARIO" ;
 						$message .= "\nName and Lastname: " . $_POST['first_last_name'];
 						$message .= "\nEmail: " . $_POST['email'];
 						$message .= "\nTelephone " . $_POST['telephone'];
@@ -61,11 +67,11 @@
 						
 						//Confirmation page
 						$user = "$mail";
-						$usersubject = "Thank You";
-						$userheaders = "From: info@configurator.com\n";
+						$usersubject = "Gracias";
+						$userheaders = "From: info@ritozimports.com\n";
 						/*$usermessage = "Thank you for your time. Your quotation request is successfully submitted.\n"; WITH OUT SUMMARY*/
 						//Confirmation page WITH  SUMMARY
-						$usermessage = "Thank you for your time. Your order request is successfully submitted. We will reply shortly.\n\nBELOW A SUMMARY\n\n$message"; 
+						$usermessage = "Gracias por tu tiempo. Su solicitud de pedido se envió correctamente. Responderemos a la brevedad.\n\nBELOW A SUMMARY\n\n$message"; 
 						mail($user,$usersubject,$usermessage,$userheaders);
 	
 ?>
@@ -79,8 +85,8 @@
                 </g>
         </svg>
 	</div>
-	<h4><span>Order successfully sent!</span>Thank you for your time</h4>
-	<small>You will be redirect back in 5 seconds.</small>
+	<h4><span>¡Pedido enviado con éxito!</span>Gracias por tu tiempo</h4>
+	<small>Serás redirigido de vuelta en 5 segundos.</small>
 </div>
 
 </body>
