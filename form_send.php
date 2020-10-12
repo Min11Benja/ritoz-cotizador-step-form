@@ -31,7 +31,7 @@
 
     <?php
 						$mail = $_POST['email'];
-						$to = "min11benja@gmail.com";	/* YOUR EMAIL HERE */
+						$to = "info@ritozimports.com";	/* YOUR EMAIL HERE */
 						$subject = "Cotizacion de parte del cotizador automatizado RitozImports";
 						$headers = "From: Cotizador Automatizado <noreply@ritozimports.com>";
 						$message = "DETALLES DE PEDIDO\n";
