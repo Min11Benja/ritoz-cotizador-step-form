@@ -34,12 +34,36 @@
 						$to = "min11benja@gmail.com";	/* YOUR EMAIL HERE */
 						$subject = "Cotizacion de parte del cotizador automatizado RitozImports";
 						$headers = "From: Cotizador Automatizado <noreply@ritozimports.com>";
-						$message = "DETAILS\n";
-						$message .= "Sombreros: " . $_POST['answer_group_1'] . "\n";
-						$message .= "Accesorios: " . $_POST['answer_group_2'] . "\n";
-						$message .= "Gorras: " . $_POST['answer_group_3'] . "\n";
-						$message .= "Carteras: " . $_POST['answer_group_4'] . "\n";
-	
+						$message = "DETALLES DE PEDIDO\n";
+    
+						/*$message .= "Sombreros: " . $_POST['answer_group_1'] . "\n";*/                    
+                        $message .= "\nSombreros:\n" ;
+						foreach($_POST['answers_1'] as $value) 
+							{ 
+							$message .=   "- " .  trim(stripslashes($value)) . "\n"; 
+							};
+    
+						/*$message .= "Accesorios: " . $_POST['answer_group_2'] . "\n";*/
+                        $message .= "\nAccesorios:\n" ;
+						foreach($_POST['answers_2'] as $value) 
+							{ 
+							$message .=   "- " .  trim(stripslashes($value)) . "\n"; 
+							};
+    
+						/*$message .= "Gorras: " . $_POST['answer_group_3'] . "\n";*/
+                        $message .= "\nGorras:\n" ;
+						foreach($_POST['answers_3'] as $value) 
+							{ 
+							$message .=   "- " .  trim(stripslashes($value)) . "\n"; 
+							};
+    
+				       /*$message .= "Carteras: " . $_POST['answer_group_4'] . "\n";*/
+	                   $message .= "\nCarteras:\n" ;
+						foreach($_POST['answers_4'] as $value) 
+							{ 
+							$message .=   "- " .  trim(stripslashes($value)) . "\n"; 
+							};
+    
 						$message .= "\nCinturones:\n" ;
 						foreach($_POST['answers_5'] as $value) 
 							{ 
