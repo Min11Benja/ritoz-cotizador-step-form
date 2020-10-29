@@ -2,12 +2,12 @@
 /* Your custom styles below */
 /*============================================================================================*/
 @media (min-width: 1200px) {
-    .container {
-        max-width: 1440px;
-    }
+  .container {
+    max-width: 1440px;
+  }
 }
 .add_top_50 {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 #logo_home h1 a {
@@ -17,38 +17,83 @@
 }
 
 .cd-nav-trigger::before {
-    background-color: #c1272d; 
+  background-color: #c1272d;
 }
 
-button.backward, button.forward, button.submit {
-    background: #fa5e56;
-    color: #333;
+button.backward,
+button.forward,
+button.submit {
+  background: #fa5e56;
+  color: #333;
 }
-button.backward:hover, button.submit:hover, button.forward:hover {
-    background: #890005;
-    color: #fff;
+button.backward:hover,
+button.submit:hover,
+button.forward:hover {
+  background: #890005;
+  color: #fff;
 }
 
 .cd-nav-trigger::after {
-    background-color: #fa5e56;
+  background-color: #fa5e56;
 }
 
 .cd-overlay-content span {
-    background-color: #fa5e56;
+  background-color: #fa5e56;
 }
 header {
-    border-top: 3px solid #890005;
+  border-top: 3px solid #890005;
 }
 .item label .item_price {
-    color: #890005;
-    font-size: 1rem;
+  color: #890005;
+  font-size: 1rem;
 }
 .item label .item_thumb img {
-    width: 220px;
-    height: auto;
+  width: 220px;
+  height: auto;
 }
 .btn-secondary {
-    color: #212529;
-    background-color: #fa5e56;
-    border-color: #e14c51;
+  color: #212529;
+  background-color: #fa5e56;
+  border-color: #e14c51;
+}
+
+/*whatsapp icon*/
+.whatsapp-icon i.hs-icon {
+  line-height: 1.4;
+  padding-left: 15px;
+}
+i.fa.fa-whatsapp {
+  line-height: 1.6;
+  font-size: 3rem;
+}
+.whatsapp-icon {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+}
+.whatsapp-icon {
+  width: 4.57143rem;
+  height: 4.57143rem;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #555;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease-out;
+  z-index: 11;
+}
+a.whatsapp-icon {
+  font-size: 40px;
+}
+a.whatsapp-icon:hover,
+.whatsapp-icon:focus:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #66ab27;
+  font-size: 40px;
+}
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
+  color: #fff;
+  text-decoration: none;
 }

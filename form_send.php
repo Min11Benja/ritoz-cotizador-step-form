@@ -81,7 +81,8 @@
 						$message .= "\nName and Lastname: " . $_POST['first_last_name'];
 						$message .= "\nEmail: " . $_POST['email'];
 						$message .= "\nTelephone " . $_POST['telephone'];
-						$message .= "\nCountry: " . $_POST['country'];
+						$message .= "\Adress " . $_POST['adress'];
+						$message .= "\nState: " . $_POST['country'];
 						$message .= "\nTerms and conditions accepted: " . $_POST['terms'] . "\n";
 												
 						//Receive Variable

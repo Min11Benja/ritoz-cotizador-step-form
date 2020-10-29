@@ -51,7 +51,7 @@ if(get_magic_quotes_gpc()) {
 
 
 //$address = "HERE your email address";
-$address = "redoxz81@gmail.com";
+$address = "info@ritozimports.com";
 
 
 // Below the subject of the email

@@ -8555,7 +8555,7 @@ k);if((j[1]||"").length<a){j[1]=j[1]||"";j[1]+=Array(a-j[1].length+1).join("0")}
    // Default options for text
 	  
 		var settings = $.extend({		
-		totallabel: "VER RESUMEN:",
+		totallabel: "<-VER RESUMEN",
 		detailslabel: "Resumen de pedido",
 		currency:"#"		
 		}, options );

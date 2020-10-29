@@ -45,10 +45,10 @@ Author URI: http://themeforest.net/user/Ansonika/
   left: 50%;
   margin-left: -25px;
   margin-top: -25px;
-  -webkit-animation: circle infinite .95s linear;
-  -moz-animation: circle infinite .95s linear;
-  -o-animation: circle infinite .95s linear;
-  animation: circle infinite .95s linear;
+  -webkit-animation: circle infinite 0.95s linear;
+  -moz-animation: circle infinite 0.95s linear;
+  -o-animation: circle infinite 0.95s linear;
+  animation: circle infinite 0.95s linear;
   border: 2px solid #890005;
   border-top-color: rgba(0, 0, 0, 0.2);
   border-right-color: rgba(0, 0, 0, 0.2);
@@ -81,10 +81,10 @@ Author URI: http://themeforest.net/user/Ansonika/
   left: 50%;
   margin-left: -25px;
   margin-top: -25px;
-  -webkit-animation: circle infinite .95s linear;
-  -moz-animation: circle infinite .95s linear;
-  -o-animation: circle infinite .95s linear;
-  animation: circle infinite .95s linear;
+  -webkit-animation: circle infinite 0.95s linear;
+  -moz-animation: circle infinite 0.95s linear;
+  -o-animation: circle infinite 0.95s linear;
+  animation: circle infinite 0.95s linear;
   border: 2px solid #890005;
   border-top-color: rgba(0, 0, 0, 0.2);
   border-right-color: rgba(0, 0, 0, 0.2);
@@ -308,7 +308,8 @@ a {
   transition: all 0.3s ease-in-out;
   outline: none;
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #fa5e56;
   text-decoration: none;
   outline: none;
@@ -433,7 +434,10 @@ header {
   text-indent: -9999px;
 }
 
-@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2 / 1),
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
   #logo_home h1 a {
     background-image: url(../img/logo_2x.png);
     background-size: 40px 40px;
@@ -830,24 +834,24 @@ footer ul li a:hover {
   font-size: 18px;
   font-size: 1.125rem;
 }
-.item input[type=checkbox]:not(old),
-.item input[type=radio]:not(old) {
+.item input[type="checkbox"]:not(old),
+.item input[type="radio"]:not(old) {
   visibility: hidden;
 }
-.item input[type=checkbox]:not(old):checked + label,
-.item input[type=radio]:not(old):checked + label,
-.item input[type=checkbox]:not(old):checked + span + label,
-.item input[type=radio]:not(old):checked + span + label {
+.item input[type="checkbox"]:not(old):checked + label,
+.item input[type="radio"]:not(old):checked + label,
+.item input[type="checkbox"]:not(old):checked + span + label,
+.item input[type="radio"]:not(old):checked + span + label {
   display: block;
   border: 1px solid #acd373;
   -webkit-box-shadow: 0 2px 40px #e0e5f0;
   -moz-box-shadow: 0 2px 40px #e0e5f0;
   box-shadow: 0 2px 40px #e0e5f0;
 }
-.item input[type=checkbox]:not(old):checked + label:before,
-.item input[type=radio]:not(old):checked + label:before,
-.item input[type=checkbox]:not(old):checked + span + label:before,
-.item input[type=radio]:not(old):checked + span + label:before {
+.item input[type="checkbox"]:not(old):checked + label:before,
+.item input[type="radio"]:not(old):checked + label:before,
+.item input[type="checkbox"]:not(old):checked + span + label:before,
+.item input[type="radio"]:not(old):checked + span + label:before {
   font-family: "fontello";
   content: "\e81b";
   position: absolute;
@@ -867,10 +871,10 @@ footer ul li a:hover {
   border: 1px solid #fff;
 }
 @media (max-width: 767px) {
-  .item input[type=checkbox]:not(old):checked + label:before,
-  .item input[type=radio]:not(old):checked + label:before,
-  .item input[type=checkbox]:not(old):checked + span + label:before,
-  .item input[type=radio]:not(old):checked + span + label:before {
+  .item input[type="checkbox"]:not(old):checked + label:before,
+  .item input[type="radio"]:not(old):checked + label:before,
+  .item input[type="checkbox"]:not(old):checked + span + label:before,
+  .item input[type="radio"]:not(old):checked + span + label:before {
     font-size: 24px;
     font-size: 1.5rem;
     top: 20px;
@@ -930,10 +934,10 @@ button.submit {
   color: #fff;
   padding: 7px 20px;
   text-decoration: none;
-  transition: background .5s ease;
-  -moz-transition: background .5s ease;
-  -webkit-transition: background .5s ease;
-  -o-transition: background .5s ease;
+  transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -webkit-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
   display: inline-block;
   cursor: pointer;
   font-weight: 400;
@@ -980,7 +984,7 @@ button[disabled] {
 
 button.backward:before {
   content: "\34";
-  font-family: 'ElegantIcons';
+  font-family: "ElegantIcons";
   position: absolute;
   top: 8px;
   left: 12px;
@@ -999,7 +1003,7 @@ button.backward:before {
 
 button.forward:before {
   content: "\35";
-  font-family: 'ElegantIcons';
+  font-family: "ElegantIcons";
   position: absolute;
   top: 8px;
   right: 10px;
@@ -1018,7 +1022,7 @@ button.forward:before {
 
 button.submit:before {
   content: "\4e";
-  font-family: 'ElegantIcons';
+  font-family: "ElegantIcons";
   position: absolute;
   top: 8px;
   right: 10px;
@@ -1060,8 +1064,9 @@ button.forward:hover {
 
 #price_total {
   line-height: 1;
-  float: left;
+  float: right;
   margin-top: 5px;
+  margin-right: 30px;
 }
 #price_total h3 {
   display: inline-block;
@@ -1093,12 +1098,12 @@ button.forward:hover {
 }
 
 a#details_bt {
-  float: left;
-  margin-left: 20px;
+  float: right;
+  margin-right: 15px;
   display: none;
   position: relative;
   z-index: 3;
-  top: 5px;
+  top: 7px;
 }
 @media (max-width: 767px) {
   a#details_bt {
@@ -1108,7 +1113,7 @@ a#details_bt {
 }
 a#details_bt:before {
   content: "\e060";
-  font-family: 'ElegantIcons';
+  font-family: "ElegantIcons";
   font-size: 22px;
   font-size: 1.375rem;
 }
@@ -1174,7 +1179,7 @@ a#details_bt:hover div {
 }
 
 .ui-widget-header {
-  background: #6C3;
+  background: #6c3;
 }
 
 .ui-widget-header a {
@@ -1351,7 +1356,7 @@ a#details_bt:hover div {
 /*============================================================================================*/
 /*-------- 3.1 Input forms --------*/
 .styled-select {
-  width: 100%;
+  width: 30%;
   overflow: hidden;
   height: 44px;
   background: #fff url(../img/arrow_down.svg) no-repeat right center;
@@ -1453,7 +1458,7 @@ span.error {
   padding: 6px 8px;
 }
 span.error:after {
-  content: '';
+  content: "";
   position: absolute;
   border-style: solid;
   border-width: 0 6px 6px 0;
@@ -1699,7 +1704,7 @@ input.qtyminus {
   font-size: 0.75rem;
   font-weight: bold;
   font-style: normal;
-  color: #FFF;
+  color: #fff;
   text-transform: uppercase;
   text-align: center;
   line-height: 20px;

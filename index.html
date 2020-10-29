@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="RitozImports | Cotizador en linea | Pedidos mayoreo">
-    <meta name="author" content="min11benja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="RitozImports | Cotizador en linea | Pedidos mayoreo"
+    />
+    <meta name="author" content="min11benja" />
     <title>RitozImports | Cotizador en linea | Pedidos mayoreo</title>
 
     <!-- Favicons-->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 
+    <!-- base css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="css/vendors.min.css" rel="stylesheet" />
+    <link href="css/icon_fonts/css/all_icons.min.css" rel="stylesheet" />
+    <link href="css/skins/square/grey.css" rel="stylesheet" />
 
-    <!-- BASE CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/menu.css" rel="stylesheet">
-    <link href="css/vendors.min.css" rel="stylesheet">
-    <link href="css/icon_fonts/css/all_icons.min.css" rel="stylesheet">
-    <link href="css/skins/square/grey.css" rel="stylesheet">
+    <!-- font awesome cdn css -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    
+    <!-- custom css -->
+    <link href="css/custom.css" rel="stylesheet" />
+  </head>
 
-    <!-- YOUR CUSTOM CSS -->
-    <link href="css/custom.css" rel="stylesheet">
-
-</head>
-
-<body>
-
+  <body>
     <div id="preloader">
-        <div data-loader="circle-side"></div>
-    </div><!-- /Preload -->
+      <div data-loader="circle-side"></div>
+    </div>
+    <!-- /Preload -->
 
     <div id="loader_form">
-        <div data-loader="circle-side-2"></div>
-    </div><!-- /Loader_form -->
+      <div data-loader="circle-side-2"></div>
+    </div>
+    <!-- /Loader_form -->
 
     <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-3">
-                    <div id="logo_home">
-                        <h1><a href="index.html"> RitozImports | Cotizador en linea | Pedidos mayoreo</a></h1>
-                    </div>
-                </div>
-                <div class="col-9">
-                    <!-- 
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3">
+            <div id="logo_home">
+              <h1>
+                <a href="index.html">
+                  RitozImports | Cotizador en linea | Pedidos mayoreo</a
+                >
+              </h1>
+            </div>
+          </div>
+          <div class="col-9">
+            <!-- 
                     <div id="social">
                       <ul>
                             <li><a href="#0"><i class="icon-facebook"></i></a></li>
@@ -54,921 +65,2271 @@
                         </ul>
                     </div>
                     -->
-                    <!-- /social -->
-                    <nav>
-                        <ul class="cd-primary-nav">
-                            <li><a href="index.html" class="animated_link">Cotizador</a></li>
-                            <li><a href="about.html" class="animated_link">Nosotros</a></li>
-                            <li><a href="contacts.html" class="animated_link">Contacto</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <!-- /social -->
+            <nav>
+              <ul class="cd-primary-nav">
+                <li>
+                  <a href="index.html" class="animated_link">Cotizador</a>
+                </li>
+                <li><a href="about.html" class="animated_link">Nosotros</a></li>
+                <li>
+                  <a href="contacts.html" class="animated_link">Contacto</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <!-- /container -->
+      </div>
+      <!-- /container -->
     </header>
     <!-- /Header -->
 
     <main>
-        <div class="container">
-            <div id="wizard_container">
-                <form name="example-1" id="wrapped" method="POST">
-                    <input id="website" name="website" type="text" value="">
-                    <!-- Leave for security protection, read docs for details -->
-                    <div id="middle-wizard">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-5 content_sticky magnific-gallery">
-                                <figure>
-                                    <a id="zoom-preview-img" href="img/product_1_large.jpg" title="Ritoz" data-effect="mfp-zoom-in">
-                                        <img id="product-preview-img" src="img/product_1.jpg" alt="" class="img-fluid add_top_50">
-                                    </a>
-                                </figure>
-                                <div class="text-center add_top_30">
-                                    <!-- <a href="img/product_1_large_2.jpg" class="btn_2" title="MacBook Air 13 Inch" data-effect="mfp-zoom-in">Ver galeria de imagenes</a>-->
-                                    <!--  <a href="img/product_1_large_3.jpg" title="MacBook Air 13 Inch" data-effect="mfp-zoom-in"></a>-->
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="step">
-                                    <div class="question_title">
-                                        <h3>Escoje tus productos</h3>
-                                    </div>
-                                    <!--
+      <div class="container">
+        <div id="wizard_container">
+          <form name="example-1" id="wrapped" method="POST">
+            <input id="website" name="website" type="text" value="" />
+            <!-- Leave for security protection, read docs for details -->
+            <div id="middle-wizard">
+              <div class="row justify-content-center">
+                <div class="col-lg-5 content_sticky magnific-gallery">
+                  <figure>
+                    <a
+                      id="zoom-preview-img"
+                      href="img/product_1_large.jpg"
+                      title="Ritoz"
+                      data-effect="mfp-zoom-in"
+                    >
+                      <img
+                        id="product-preview-img"
+                        src="img/product_1.jpg"
+                        alt=""
+                        class="img-fluid add_top_50"
+                      />
+                    </a>
+                  </figure>
+                  <div class="text-center add_top_30">
+                    <!-- <a href="img/product_1_large_2.jpg" class="btn_2" title="MacBook Air 13 Inch" data-effect="mfp-zoom-in">Ver galeria de imagenes</a>-->
+                    <!--  <a href="img/product_1_large_3.jpg" title="MacBook Air 13 Inch" data-effect="mfp-zoom-in"></a>-->
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="step">
+                    <div class="question_title">
+                      <h3>Escoje tus productos</h3>
+                    </div>
+                    <!--
                                     <p>Regione consectetuer vis eu, no efficiendi complectitur his, mei in agam intellegebat. Illud gloriatur est ex, qui ne vero suavitate definiebas.</p>
                                     -->
-                                    <hr>
+                    <hr />
 
-
-                                    <!-- 
-////////////////////////////////////SOMBREROS/////////////////
+                    <!-- 
+////////////////////////////////////sombreros/////////////////
                                     -->
-                                    <div class="group_items">
-                                        <h4>Sombreros</h4>
-                                        <!-- Sombrero Speedy Gonzales -->
-                                        <!--changeFondo(id_toChange,srcFondo) product-preview-img-->
-                                        <div class="item">
+                    <div class="group_items">
+                      <h4>Sombreros</h4>
+                      <!-- Sombrero Speedy Gonzales -->
+                      <!--changeFondo(id_toChange,srcFondo) product-preview-img-->
+                      <div class="item">
+                        <input
+                          data-price="6"
+                          data-label="Sombrero Speedy Gonzales"
+                          id="answer_1_group_1"
+                          type="checkbox"
+                          name="answers_1[]"
+                          value="Sombrero Speedy Gonzales"
+                          class=""
+                        />
 
-                                            <input data-price="6" data-label="Sombrero Speedy Gonzales" id="answer_1_group_1" type="checkbox" name="answers_1[]" value="Sombrero Speedy Gonzales" class="">
+                        <label
+                          for="answer_1_group_1"
+                          class="clearfix"
+                          onclick="changeFondo('images/speedy-gonzales.png')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/speedy-gonzales.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
 
-                                            <label for="answer_1_group_1" class="clearfix" onclick="changeFondo('images/speedy-gonzales.png')">
+                          <p>
+                            <!-- <span class="item_price">$1299.00</span>-->
+                            <strong>Sombrero Speedy Gonzales</strong>
+                            Sombrero Artesanal de Palma Trenzada.
+                            <br />
+                            Falda Extra Grande
+                            <br />
+                            Talla: Unitalla
+                          </p>
 
-                                                <span class="item_thumb">
-                                                    <img src="images/speedy-gonzales.png" alt="" class="img-fluid">
-                                                </span>
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_1','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_1','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_1','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_1','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_1','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_1','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+                      <!-- Sombrero 8 segundos -->
+                      <div class="item">
+                        <input
+                          data-price="12"
+                          data-label="Sombrero Ocho Segundos"
+                          id="answer_2_group_1"
+                          name="answers_1[]"
+                          type="checkbox"
+                          value="Sombrero Ocho Segundos"
+                          class=""
+                        />
+                        <label
+                          for="answer_2_group_1"
+                          class="clearfix"
+                          onclick="changeFondo('images/8-segundos.png')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/8-segundos.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <p>
+                            <!-- <span class="item_price">$1299.00</span>-->
+                            <strong>Sombrero Ocho Segundos</strong>
+                            Sombrero Artesanal de Palma Trenzada.
+                            <br />
+                            Falda Regular
+                            <br />
+                            Talla: Unitalla
+                          </p>
+                          <i class="ribbon"><span>Popular</span></i>
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_1','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_1','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_1','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_1','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_1','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_1','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+                      <!-- Sombrero Sonora -->
+                      <div class="item">
+                        <input
+                          data-price="12"
+                          data-label="Sombrero Sonora"
+                          id="answer_3_group_1"
+                          name="answers_1[]"
+                          type="checkbox"
+                          value="Sombrero Sonora"
+                          class=""
+                        />
+                        <label
+                          for="answer_3_group_1"
+                          class="clearfix"
+                          onclick="changeFondo('images/sonora.png')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/sonora.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <p>
+                            <!-- <span class="item_price">$1299.00</span>-->
+                            <strong>Sombrero Sonora</strong>
+                            Sombrero Artesanal de Palma Trenzada.
+                            <br />
+                            Falda Regular
+                            <br />
+                            Talla: Unitalla
+                          </p>
 
-                                                <p>
-                                                    <!-- <span class="item_price">$1299.00</span>-->
-                                                    <strong>Sombrero Speedy Gonzales</strong>
-                                                    Sombrero Artesanal de Palma Trenzada.
-                                                    <br>
-                                                    Falda Extra Grande
-                                                    <br>
-                                                    Talla: Unitalla
-                                                </p>
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_1','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_1','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_1','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_1','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_1','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_1','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+                      <!-- Sombrero Alicia -->
+                      <div class="item">
+                        <input
+                          data-price="6"
+                          data-label="Sombrero Alicia"
+                          id="answer_4_group_1"
+                          name="answers_1[]"
+                          type="checkbox"
+                          value="Sombrero Alicia"
+                          class=""
+                        />
+                        <label
+                          for="answer_4_group_1"
+                          class="clearfix"
+                          onclick="changeFondo('images/alicia.png')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/alicia.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <p>
+                            <!-- <span class="item_price">$1299.00</span>-->
+                            <strong>Sombrero Alicia</strong>
+                            Sombrero Artesanal de Palma Trenzada.
+                            <br />
+                            Falda Pequeña
+                            <br />
+                            Talla: Unitalla
+                          </p>
+                          <i class="ribbon"><span>Nuevo</span></i>
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_4_group_1','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_4_group_1','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_4_group_1','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_4_group_1','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_4_group_1','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_4_group_1','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+                      <!-- Sombrero Gringo Viejo -->
+                      <div class="item">
+                        <input
+                          data-price="6"
+                          data-label="Sombrero Gringo Viejo"
+                          id="answer_5_group_1"
+                          name="answers_1[]"
+                          type="checkbox"
+                          value="Sombrero Gringo Viejo"
+                          class=""
+                        />
+                        <label
+                          for="answer_5_group_1"
+                          class="clearfix"
+                          onclick="changeFondo('images/gringo-viejo.png')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/gringo-viejo.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <p>
+                            <!-- <span class="item_price">$1299.00</span>-->
+                            <strong>Sombrero Gringo Viejo</strong>
+                            Sombrero Artesanal de Palma Trenzada.
+                            <br />
+                            Falda Regualar
+                            <br />
+                            Talla: Unitalla
+                          </p>
 
-                                                <span>
-                                                    <!-- Split dropup button -->
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" class="btn btn-secondary btn-sm">
-                                                            Cantidad de pedido
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_1','6')">6 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_1','12')">12 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_1','18')">18 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_1','24')">24 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_1','48')">48 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_1','60')">60 Piezas</a>
-                                                        </div>
-                                                    </div>
-                                                </span>
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_5_group_1','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_5_group_1','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_5_group_1','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_5_group_1','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_5_group_1','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_5_group_1','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+                      <!-- Sombrero de Lona Large -->
+                      <div class="item">
+                        <input
+                          data-price="6"
+                          data-label="Sombrero de Lona L"
+                          id="answer_6_group_1"
+                          name="answers_1[]"
+                          type="checkbox"
+                          value="Sombrero de Lona L"
+                          class=""
+                        />
+                        <label
+                          for="answer_6_group_1"
+                          class="clearfix"
+                          onclick="changeFondo('img/processor_1.jpg')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="img/processor_1.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <p>
+                            <!-- <span class="item_price">$1299.00</span>-->
+                            <strong>Sombrero de Lona L</strong>
+                            Sombrero de lona o algodón estilo chihuahua
 
-                                            </label>
+                            <br />
+                            Talla: Large
+                          </p>
 
-                                        </div>
-                                        <!-- Sombrero 8 segundos -->
-                                        <div class="item">
-                                            <input data-price="12" data-label="Sombrero Ocho Segundos" id="answer_2_group_1" name="answers_1[]" type="checkbox" value="Sombrero Ocho Segundos" class="">
-                                            <label for="answer_2_group_1" class="clearfix" onclick="changeFondo('images/8-segundos.png')">
-                                                <span class="item_thumb">
-                                                    <img src="images/8-segundos.png" alt="" class="img-fluid">
-                                                </span>
-                                                <p>
-                                                    <!-- <span class="item_price">$1299.00</span>-->
-                                                    <strong>Sombrero Ocho Segundos</strong>
-                                                    Sombrero Artesanal de Palma Trenzada.
-                                                    <br>
-                                                    Falda Regular
-                                                    <br>
-                                                    Talla: Unitalla
-                                                </p>
-                                                <i class="ribbon"><span>Popular</span></i>
-                                                <span>
-                                                    <!-- Split dropup button -->
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" class="btn btn-secondary btn-sm">
-                                                            Cantidad de pedido
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_1','6')">6 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_1','12')">12 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_1','18')">18 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_1','24')">24 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_1','48')">48 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_1','60')">60 Piezas</a>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <!-- Sombrero Sonora -->
-                                        <div class="item">
-                                            <input data-price="12" data-label="Sombrero Sonora" id="answer_3_group_1" name="answers_1[]" type="checkbox" value="Sombrero Sonora" class="">
-                                            <label for="answer_3_group_1" class="clearfix" onclick="changeFondo('images/sonora.png')">
-                                                <span class="item_thumb">
-                                                    <img src="images/sonora.png" alt="" class="img-fluid">
-                                                </span>
-                                                <p>
-                                                    <!-- <span class="item_price">$1299.00</span>-->
-                                                    <strong>Sombrero Sonora</strong>
-                                                    Sombrero Artesanal de Palma Trenzada.
-                                                    <br>
-                                                    Falda Regular
-                                                    <br>
-                                                    Talla: Unitalla
-                                                </p>
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_6_group_1','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_6_group_1','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_6_group_1','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_6_group_1','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_6_group_1','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_6_group_1','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+                      <!-- Sombrero de Lona Extra Large -->
+                      <div class="item">
+                        <input
+                          data-price="6"
+                          data-label="Sombrero de Lona XL"
+                          id="answer_7_group_1"
+                          name="answers_1[]"
+                          type="checkbox"
+                          value="Sombrero de Lona XL"
+                          class=""
+                        />
+                        <label
+                          for="answer_7_group_1"
+                          class="clearfix"
+                          onclick="changeFondo('img/processor_1.jpg')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="img/processor_1.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <p>
+                            <!-- <span class="item_price">$1299.00</span>-->
+                            <strong>Sombrero de Lona XL</strong>
+                            Sombrero de lona o algodón estilo chihuahua
 
-                                                <span>
-                                                    <!-- Split dropup button -->
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" class="btn btn-secondary btn-sm">
-                                                            Cantidad de pedido
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_1','6')">6 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_1','12')">12 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_1','18')">18 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_1','24')">24 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_1','48')">48 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_1','60')">60 Piezas</a>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <!-- Sombrero Alicia -->
-                                        <div class="item">
-                                            <input data-price="6" data-label="Sombrero Alicia" id="answer_4_group_1" name="answers_1[]" type="checkbox" value="Sombrero Alicia" class="">
-                                            <label for="answer_4_group_1" class="clearfix" onclick="changeFondo('images/alicia.png')">
-                                                <span class="item_thumb">
-                                                    <img src="images/alicia.png" alt="" class="img-fluid">
-                                                </span>
-                                                <p>
-                                                    <!-- <span class="item_price">$1299.00</span>-->
-                                                    <strong>Sombrero Alicia</strong>
-                                                    Sombrero Artesanal de Palma Trenzada.
-                                                    <br>
-                                                    Falda Pequeña
-                                                    <br>
-                                                    Talla: Unitalla
-                                                </p>
-                                                <i class="ribbon"><span>Nuevo</span></i>
-                                                <span>
-                                                    <!-- Split dropup button -->
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" class="btn btn-secondary btn-sm">
-                                                            Cantidad de pedido
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_4_group_1','6')">6 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_4_group_1','12')">12 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_4_group_1','18')">18 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_4_group_1','24')">24 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_4_group_1','48')">48 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_4_group_1','60')">60 Piezas</a>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <!-- Sombrero Gringo Viejo -->
-                                        <div class="item">
-                                            <input data-price="6" data-label="Sombrero Gringo Viejo" id="answer_5_group_1" name="answers_1[]" type="checkbox" value="Sombrero Gringo Viejo" class="">
-                                            <label for="answer_5_group_1" class="clearfix" onclick="changeFondo('images/gringo-viejo.png')">
-                                                <span class="item_thumb">
-                                                    <img src="images/gringo-viejo.png" alt="" class="img-fluid">
-                                                </span>
-                                                <p>
-                                                    <!-- <span class="item_price">$1299.00</span>-->
-                                                    <strong>Sombrero Gringo Viejo</strong>
-                                                    Sombrero Artesanal de Palma Trenzada.
-                                                    <br>
-                                                    Falda Regualar
-                                                    <br>
-                                                    Talla: Unitalla
-                                                </p>
+                            <br />
+                            Talla: Extra Large
+                          </p>
 
-                                                <span>
-                                                    <!-- Split dropup button -->
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" class="btn btn-secondary btn-sm">
-                                                            Cantidad de pedido
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_5_group_1','6')">6 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_5_group_1','12')">12 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_5_group_1','18')">18 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_5_group_1','24')">24 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_5_group_1','48')">48 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_5_group_1','60')">60 Piezas</a>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <!-- Sombrero de Lona Large -->
-                                        <div class="item">
-                                            <input data-price="6" data-label="Sombrero de Lona L" id="answer_6_group_1" name="answers_1[]" type="checkbox" value="Sombrero de Lona L" class="">
-                                            <label for="answer_6_group_1" class="clearfix" onclick="changeFondo('img/processor_1.jpg')">
-                                                <span class="item_thumb">
-                                                    <img src="img/processor_1.jpg" alt="" class="img-fluid">
-                                                </span>
-                                                <p>
-                                                    <!-- <span class="item_price">$1299.00</span>-->
-                                                    <strong>Sombrero de Lona L</strong>
-                                                    Sombrero de lona o algodón estilo chihuahua
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_7_group_1','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_7_group_1','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_7_group_1','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_7_group_1','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_7_group_1','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_7_group_1','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- /group_items -->
 
-                                                    <br>
-                                                    Talla: Large
-                                                </p>
-
-                                                <span>
-                                                    <!-- Split dropup button -->
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" class="btn btn-secondary btn-sm">
-                                                            Cantidad de pedido
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_6_group_1','6')">6 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_6_group_1','12')">12 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_6_group_1','18')">18 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_6_group_1','24')">24 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_6_group_1','48')">48 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_6_group_1','60')">60 Piezas</a>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <!-- Sombrero de Lona Extra Large -->
-                                        <div class="item">
-                                            <input data-price="6" data-label="Sombrero de Lona XL" id="answer_7_group_1" name="answers_1[]" type="checkbox" value="Sombrero de Lona XL" class="">
-                                            <label for="answer_7_group_1" class="clearfix" onclick="changeFondo('img/processor_1.jpg')">
-                                                <span class="item_thumb">
-                                                    <img src="img/processor_1.jpg" alt="" class="img-fluid">
-                                                </span>
-                                                <p>
-                                                    <!-- <span class="item_price">$1299.00</span>-->
-                                                    <strong>Sombrero de Lona XL</strong>
-                                                    Sombrero de lona o algodón estilo chihuahua
-
-                                                    <br>
-                                                    Talla: Extra Large
-                                                </p>
-
-                                                <span>
-                                                    <!-- Split dropup button -->
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" class="btn btn-secondary btn-sm">
-                                                            Cantidad de pedido
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_7_group_1','6')">6 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_7_group_1','12')">12 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_7_group_1','18')">18 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_7_group_1','24')">24 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_7_group_1','48')">48 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_7_group_1','60')">60 Piezas</a>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                        </div>
-
-                                    </div>
-                                    <!-- /group_items -->
-
-                                    <!-- 
+                    <!-- 
 ////////////////////////////////////PULSERAS/////////////////
                                     -->
-                                    <div class="group_items">
-                                        <h4>Accesorios</h4>
-                                        <!--Paquete de Pulseras Artesanales-->
-                                        <div class="item">
-                                            <input data-price="92" data-label="Paquete de Pulseras Artesanales" id="answer_1_group_2" type="checkbox" name="answers_2[]" value="Paquete de Pulseras Artesanales - 92 pz" class="">
-                                            <label for="answer_1_group_2" class="clearfix" onclick="changeFondo('images/paquete-pulseras.png')">
-                                                <span class="item_thumb">
-                                                    <img src="images/paquete-pulseras.png" alt="" class="img-fluid">
-                                                </span>
-                                                <!--<span class="item_price">$199.00</span>-->
+                    <div class="group_items">
+                      <h4>Accesorios</h4>
+                      <!--Paquete de Pulseras Artesanales-->
+                      <div class="item">
+                        <input
+                          data-price="92"
+                          data-label="Paquete de Pulseras Artesanales"
+                          id="answer_1_group_2"
+                          type="checkbox"
+                          name="answers_2[]"
+                          value="Paquete de Pulseras Artesanales - 92 pz"
+                          class=""
+                        />
+                        <label
+                          for="answer_1_group_2"
+                          class="clearfix"
+                          onclick="changeFondo('images/paquete-pulseras.png')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/paquete-pulseras.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <!--<span class="item_price">$199.00</span>-->
 
-                                                <strong>Paquete de Pulseras Artesanales</strong>
-                                                Pulseras de mano artesanal con diferentes diseños religiosos
-                                                <br>Cantidad: 92 Pulseras (6 Docenas)
-                                            </label>
-                                        </div>
-                                        <!--Funda  de Celular Vaquera-->
-                                        <div class="item">
-                                            <input data-price="92" data-label="Funda  de Celular Vaquera" id="answer_2_group_2" type="checkbox" name="answers_2[]" value="Funda  de Celular Vaquera" class="">
-                                            <label for="answer_2_group_2" class="clearfix" onclick="changeFondo('images/funda-cel-vaquera.png')">
-                                                <span class="item_thumb">
-                                                    <img src="images/funda-cel-vaquera.png" alt="" class="img-fluid">
-                                                </span>
-                                                <!--<span class="item_price">$199.00</span>-->
+                          <strong>Paquete de Pulseras Artesanales</strong>
+                          Pulseras de mano artesanal con diferentes diseños
+                          religiosos
+                          <br />Cantidad: 92 Pulseras (6 Docenas)
+                        </label>
+                      </div>
+                      <!--Funda  de Celular Vaquera-->
+                      <div class="item">
+                        <input
+                          data-price="92"
+                          data-label="Funda  de Celular Vaquera"
+                          id="answer_2_group_2"
+                          type="checkbox"
+                          name="answers_2[]"
+                          value="Funda  de Celular Vaquera"
+                          class=""
+                        />
+                        <label
+                          for="answer_2_group_2"
+                          class="clearfix"
+                          onclick="changeFondo('images/Fundas-de-Celular.jpg')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/Fundas-de-Celular.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <!--<span class="item_price">$199.00</span>-->
 
-                                                <strong>Funda de Celular Vaquera</strong>
-                                                Funda para celuar vaquera con aplicaciones de pelo de bovino y piel. Tamaño Largo y Extra Largo.
-                                                <br><br>
-                                                <span>
-                                                    <!-- Split dropup button -->
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" class="btn btn-secondary btn-sm">
-                                                            Cantidad de pedido
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_2','6')">6 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_2','12')">12 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_2','18')">18 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_2','24')">24 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_2','48')">48 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_2','60')">60 Piezas</a>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <!--Resorteras -->
-                                        <div class="item">
-                                            <input data-price="92" data-label="Resorteras" id="answer_3_group_2" type="checkbox" name="answers_2[]" value="Resorteras" class="">
-                                            <label for="answer_3_group_2" class="clearfix" onclick="changeFondo('img/product_2.jpg')">
-                                                <span class="item_thumb">
-                                                    <img src="img/product_2.jpg" alt="" class="img-fluid">
-                                                </span>
-                                                <!--<span class="item_price">$199.00</span>-->
+                          <strong>Fundas de Celular Vaqueras</strong>
+                          Funda para celuar vaquera con aplicaciones de pelo de
+                          bovino y piel. Tamaño Largo y Extra Largo.
+                          <br /><br />
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_2','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_2','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_2','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_2','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_2','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_2','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+                      <!--Resorteras -->
+                      <div class="item">
+                        <input
+                          data-price="92"
+                          data-label="Resorteras"
+                          id="answer_3_group_2"
+                          type="checkbox"
+                          name="answers_2[]"
+                          value="Resorteras"
+                          class=""
+                        />
+                        <label
+                          for="answer_3_group_2"
+                          class="clearfix"
+                          onclick="changeFondo('img/product_2.jpg')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="img/product_2.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <!--<span class="item_price">$199.00</span>-->
 
-                                                <strong>Resorteras</strong>
-                                                Resortera elaborada con alambre y envuelta en hule de diferentes colores.
-                                                <br><br>
-                                                <span>
-                                                    <!-- Split dropup button -->
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" class="btn btn-secondary btn-sm">
-                                                            Cantidad de pedido
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_2','6')">6 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_2','12')">12 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_2','18')">18 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_2','24')">24 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_2','48')">48 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_2','60')">60 Piezas</a>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                        </div>
+                          <strong>Resorteras</strong>
+                          Resortera elaborada con alambre y envuelta en hule de
+                          diferentes colores.
+                          <br /><br />
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_2','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_2','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_2','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_2','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_2','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_2','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- /group_items -->
 
-
-                                    </div>
-                                    <!-- /group_items -->
-
-                                    <!-- 
+                    <!-- 
 ////////////////////////////////////GORRAS/////////////////
                                     -->
 
-                                    <div class="group_items">
-                                        <h4>Gorras</h4>
+                    <div class="group_items">
+                      <h4>Gorras</h4>
 
+                      <!--Gorra Galoneada Charra-->
+                      <div class="item">
+                        <input
+                          data-price="6"
+                          data-label="Gorra Galoneada Charra"
+                          id="answer_1_group_3"
+                          type="checkbox"
+                          name="answers_3[]"
+                          value="Gorra Galoneada Charra"
+                          class=""
+                        />
+                        <label
+                          for="answer_1_group_3"
+                          class="clearfix"
+                          onclick="changeFondo('images/gorra-galoneada-charra.png')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/gorra-galoneada-charra.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <!--  <span class="item_price">$99.00</span>-->
+                          <strong>Gorra Galoneada Charra</strong>
+                          Gorra artesanal charra bordada con placa y
+                          aplicaciones de piel
+                          <br /><br />
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_3','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_3','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_3','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_3','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_3','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_3','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
 
-                                        <!--Gorra Galoneada Charra-->
-                                        <div class="item">
-                                            <input data-price="6" data-label="Gorra Galoneada Charra" id="answer_1_group_3" type="checkbox" name="answers_3[]" value="Gorra Galoneada Charra" class="">
-                                            <label for="answer_1_group_3" class="clearfix" onclick="changeFondo('images/gorra-galoneada-charra.png')">
-                                                <span class="item_thumb">
-                                                    <img src="images/gorra-galoneada-charra.png" alt="" class="img-fluid">
-                                                </span>
-                                                <!--  <span class="item_price">$99.00</span>-->
-                                                <strong>Gorra Galoneada Charra</strong>
-                                                Gorra artesanal charra bordada con placa y aplicaciones de piel
-                                                <br><br>
-                                                <span>
-                                                    <!-- Split dropup button -->
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" class="btn btn-secondary btn-sm">
-                                                            Cantidad de pedido
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_3','6')">6 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_3','12')">12 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_3','18')">18 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_3','24')">24 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_3','48')">48 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_3','60')">60 Piezas</a>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                        </div>
+                      <!--Gorra Galoneada Charra-->
+                      <div class="item">
+                        <input
+                          data-price="6"
+                          data-label="Gorra Galoneada de Estados"
+                          id="answer_2_group_3"
+                          name="answers_3[]"
+                          type="checkbox"
+                          value="Gorra Galoneada de Estados"
+                          class=""
+                        />
+                        <label
+                          for="answer_2_group_3"
+                          class="clearfix"
+                          onclick="changeFondo('images/gorra-galoneada-estados.png')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/gorra-galoneada-estados.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <i class="ribbon"><span>Popular</span></i>
+                          <!--<span class="item_price">$145.00</span>-->
+                          <strong>Gorra Galoneada de Estados</strong>
+                          Gorra artesanal charra bordada con nombres de estado y
+                          aplicaciones de piel .
+                          <br /><br />
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_3','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_3','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_3','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_3','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_3','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_3','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
 
-                                        <!--Gorra Galoneada Charra-->
-                                        <div class="item">
-                                            <input data-price="6" data-label="Gorra Galoneada de Estados" id="answer_2_group_3" name="answers_3[]" type="checkbox" value="Gorra Galoneada de Estados" class="">
-                                            <label for="answer_2_group_3" class="clearfix" onclick="changeFondo('images/gorra-galoneada-estados.png')">
-                                                <span class="item_thumb">
-                                                    <img src="images/gorra-galoneada-estados.png" alt="" class="img-fluid">
-                                                </span>
-                                                <i class="ribbon"><span>Popular</span></i>
-                                                <!--<span class="item_price">$145.00</span>-->
-                                                <strong>Gorra Galoneada de Estados</strong>
-                                                Gorra artesanal charra bordada con nombres de estado y aplicaciones de piel .
-                                                <br><br>
-                                                <span>
-                                                    <!-- Split dropup button -->
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" class="btn btn-secondary btn-sm">
-                                                            Cantidad de pedido
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_3','6')">6 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_3','12')">12 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_3','18')">18 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_3','24')">24 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_3','48')">48 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_3','60')">60 Piezas</a>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                        </div>
-
-                                        <!--Gorra Red Eagle-->
-                                        <div class="item">
-                                            <input data-price="6" data-label="Gorra Red Eagle" id="answer_3_group_3" name="answers_3[]" type="checkbox" value="Gorra Red Eagle" class="">
-                                            <label for="answer_3_group_3" class="clearfix" onclick="changeFondo('img/memory_3.jpg')">
-                                                <span class="item_thumb">
-                                                    <img src="img/memory_3.jpg" alt="" class="img-fluid">
-                                                </span>
-                                                <!-- <span class="item_price">$200.00</span>-->
-                                                <strong>Gorra Red Eagle</strong>
-                                                Gorra con diseño casual en diferentes diseños, colores y materiales.
-                                                <br><br>
-                                                <span>
-                                                    <!-- Split dropup button -->
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" class="btn btn-secondary btn-sm">
-                                                            Cantidad de pedido
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_3','6')">6 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_3','12')">12 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_3','18')">18 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_3','24')">24 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_3','48')">48 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_3','60')">60 Piezas</a>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <!-- /group_items -->
-                                    <!-- 
+                      <!--Gorra Red Eagle-->
+                      <div class="item">
+                        <input
+                          data-price="6"
+                          data-label="Gorra Red Eagle"
+                          id="answer_3_group_3"
+                          name="answers_3[]"
+                          type="checkbox"
+                          value="Gorra Red Eagle"
+                          class=""
+                        />
+                        <label
+                          for="answer_3_group_3"
+                          class="clearfix"
+                          onclick="changeFondo('img/memory_3.jpg')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="img/memory_3.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <!-- <span class="item_price">$200.00</span>-->
+                          <strong>Gorra Red Eagle</strong>
+                          Gorra con diseño casual en diferentes diseños, colores
+                          y materiales.
+                          <br /><br />
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_3','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_3','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_3','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_3','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_3','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_3','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- /group_items -->
+                    <!-- 
 ////////////////////////////////////Carteras/////////////////
                                     -->
-                                    <div class="group_items">
-                                        <h4>Carteras</h4>
+                    <div class="group_items">
+                      <h4>Carteras</h4>
+
+                      <!--Cartera Texana-->
+                      <div class="item">
+                        <input
+                          data-price="6"
+                          data-label="Cartera Texana"
+                          id="answer_1_group_4"
+                          type="checkbox"
+                          name="answers_4[]"
+                          value="Cartera Texana"
+                          class=""
+                        />
+                        <label
+                          for="answer_1_group_4"
+                          class="clearfix"
+                          onclick="changeFondo('images/cartera-texana.png')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/cartera-texana.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <i class="ribbon"><span>Popular</span></i>
+                          <!--<span class="item_price">$99.00</span>-->
+                          <strong>Cartera Texana</strong>
+                          Cartera de piel sintetica tipo chequera con acabados y
+                          diseños cincelados vaqueros, con aplicaciones de
+                          herraje y pelo de bovino
+                          <br /><br />
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_4','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_4','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_4','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_4','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_4','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_4','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+
+                      <!--Cartera Vaquera-->
+                      <div class="item">
+                        <input
+                          data-price="6"
+                          data-label="Cartera Vaquera"
+                          id="answer_2_group_4"
+                          name="answers_4[]"
+                          type="checkbox"
+                          value="Cartera Vaquera"
+                          class=""
+                        />
+                        <label
+                          for="answer_2_group_4"
+                          class="clearfix"
+                          onclick="changeFondo('images/cartera-vaquera.png')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/cartera-vaquera.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <!--<span class="item_price">$145.00</span>-->
+                          <strong>Cartera Vaquera</strong>
+                          Cartera de piel sintetica estilo normal con acabados y
+                          diseños cincelados vaqueros, con aplicaciones de
+                          herraje y pelo de bovino.
+                          <br /><br />
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_4','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_4','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_4','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_4','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_4','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_4','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+
+                      <!--Cartera Mexicana Galoneada-->
+                      <div class="item">
+                        <input
+                          data-price="6"
+                          data-label="Cartera Mexicana Galoneada"
+                          id="answer_3_group_4"
+                          name="answers_4[]"
+                          type="checkbox"
+                          value="Cartera Mexicana Galoneada"
+                          class=""
+                        />
+                        <label
+                          for="answer_3_group_4"
+                          class="clearfix"
+                          onclick="changeFondo('img/memory_3.jpg')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="img/memory_3.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <!--<span class="item_price">$145.00</span>-->
+                          <strong>Cartera Mexicana Galoneada</strong>
+                          Cartera de piel estilo normal galoneada con acabados y
+                          diseños vaqueros y nombres de estados con aplicaciones
+                          de pelo de bovino
+                          <br /><br />
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_4','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_4','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_4','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_4','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_4','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_3_group_4','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+
+                      <!--Cartera de Estados-->
+                      <div class="item">
+                        <input
+                          data-price="6"
+                          data-label="Cartera de Estados"
+                          id="answer_4_group_4"
+                          name="answers_4[]"
+                          type="checkbox"
+                          value="Cartera Mexicana Galoneada"
+                          class=""
+                        />
+                        <label
+                          for="answer_4_group_4"
+                          class="clearfix"
+                          onclick="changeFondo('images/Cartera-de-Estados.jpg')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/Cartera-de-Estados.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <!--<span class="item_price">$145.00</span>-->
+                          <strong>Cartera de estados</strong>
+                          Cartera de piel estilo normal de estados.
+                          <br /><br />
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_4_group_4','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_4_group_4','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_4_group_4','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_4_group_4','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_4_group_4','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_4_group_4','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
 
 
-                                        <!--Cartera Texana-->
-                                        <div class="item">
-                                            <input data-price="6" data-label="Cartera Texana" id="answer_1_group_4" type="checkbox" name="answers_4[]" value="Cartera Texana" class="">
-                                            <label for="answer_1_group_4" class="clearfix" onclick="changeFondo('images/cartera-texana.png')">
-                                                <span class="item_thumb">
-                                                    <img src="images/cartera-texana.png" alt="" class="img-fluid">
-                                                </span>
-                                                <i class="ribbon"><span>Popular</span></i>
-                                                <!--<span class="item_price">$99.00</span>-->
-                                                <strong>Cartera Texana</strong>
-                                                Cartera de piel sintetica tipo chequera con acabados y diseños cincelados vaqueros, con aplicaciones de herraje y pelo de bovino
-                                                <br><br>
-                                                <span>
-                                                    <!-- Split dropup button -->
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" class="btn btn-secondary btn-sm">
-                                                            Cantidad de pedido
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_4','6')">6 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_4','12')">12 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_4','18')">18 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_4','24')">24 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_4','48')">48 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_4','60')">60 Piezas</a>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                        </div>
-
-                                        <!--Cartera Vaquera-->
-                                        <div class="item">
-                                            <input data-price="6" data-label="Cartera Vaquera" id="answer_2_group_4" name="answers_4[]" type="checkbox" value="Cartera Vaquera" class="">
-                                            <label for="answer_2_group_4" class="clearfix" onclick="changeFondo('images/cartera-vaquera.png')">
-                                                <span class="item_thumb">
-                                                    <img src="images/cartera-vaquera.png" alt="" class="img-fluid">
-                                                </span>
-                                                <!--<span class="item_price">$145.00</span>-->
-                                                <strong>Cartera Vaquera</strong>
-                                                Cartera de piel sintetica estilo normal con acabados y diseños cincelados vaqueros, con aplicaciones de herraje y pelo de bovino.
-                                                <br><br>
-                                                <span>
-                                                    <!-- Split dropup button -->
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" class="btn btn-secondary btn-sm">
-                                                            Cantidad de pedido
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_4','6')">6 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_4','12')">12 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_4','18')">18 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_4','24')">24 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_4','48')">48 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_4','60')">60 Piezas</a>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                        </div>
-
-                                        <!--Cartera Vaquera-->
-                                        <div class="item">
-                                            <input data-price="6" data-label="Cartera Mexicana Galoneada" id="answer_3_group_4" name="answers_4[]" type="checkbox" value="Cartera Mexicana Galoneada" class="">
-                                            <label for="answer_3_group_4" class="clearfix" onclick="changeFondo('img/memory_3.jpg')">
-                                                <span class="item_thumb">
-                                                    <img src="img/memory_3.jpg" alt="" class="img-fluid">
-                                                </span>
-                                                <!--<span class="item_price">$145.00</span>-->
-                                                <strong>Cartera Mexicana Galoneada</strong>
-                                                Cartera de piel estilo normal galoneada con acabados y diseños vaqueros y nombres de estados con aplicaciones de pelo de bovino
-                                                <br><br>
-                                                <span>
-                                                    <!-- Split dropup button -->
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" class="btn btn-secondary btn-sm">
-                                                            Cantidad de pedido
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_4','6')">6 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_4','12')">12 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_4','18')">18 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_4','24')">24 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_4','48')">48 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_3_group_4','60')">60 Piezas</a>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                        </div>
-
-                                    </div>
-                                    <!-- 
+                    </div>
+                    <!-- 
 ////////////////////////////////////Cinturon/////////////////
                                     -->
-                                    <!-- /group_items -->
+                    <!-- /group_items -->
 
-                                    <div class="group_items">
-                                        <h4>Cinturones</h4>
+                    <div class="group_items">
+                      <h4>Cinturones</h4>
 
-                                        <!--Cinturón Vaquero Estilo Laser-->
-                                        <div class="item">
-                                            <input data-price="6" data-label="Cinturón Vaquero Estilo Laser" id="answer_1_group_5" type="checkbox" name="answers_5[]" value="Cinturón Vaquero Estilo Laser" class="">
-                                            <label for="answer_1_group_5" class="clearfix" onclick="changeFondo('images/cinturon-vaquero-laser.png')">
-                                                <span class="item_thumb">
-                                                    <img src="images/cinturon-vaquero-laser.png" alt="" class="img-fluid">
-                                                </span>
+                      <!--Cinturón Vaquero Estilo Laser-->
+                      <div class="item">
+                        <input
+                          data-price="6"
+                          data-label="Cinturón Vaquero Estilo Laser"
+                          id="answer_1_group_5"
+                          type="checkbox"
+                          name="answers_5[]"
+                          value="Cinturón Vaquero Estilo Laser"
+                          class=""
+                        />
+                        <label
+                          for="answer_1_group_5"
+                          class="clearfix"
+                          onclick="changeFondo('images/cinturon-vaquero-laser.png')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/cinturon-vaquero-laser.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
 
-                                                <!--<span class="item_price">$99.00</span>-->
-                                                <strong>Cinturón Vaquero Estilo Laser</strong>
-                                                Cinturon de piel de bovino grabado a laser con diferentes diseños y cortes. Tallas: 38,40,42,44 , Surtidas.
-                                                <br><br>
-                                                <span>
-                                                    <!-- Split dropup button -->
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" class="btn btn-secondary btn-sm">
-                                                            Cantidad de pedido
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_5','6')">6 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_5','12')">12 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_5','18')">18 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_5','24')">24 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_5','48')">48 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_1_group_5','60')">60 Piezas</a>
-                                                        </div>
+                          <!--<span class="item_price">$99.00</span>-->
+                          <strong>Cinturón Vaquero Estilo Laser</strong>
+                          Cinturon de piel de bovino grabado a laser con
+                          diferentes diseños y cortes. Tallas: 38,40,42,44 ,
+                          Surtidas.
+                          <br /><br />
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_5','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_5','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_5','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_5','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_5','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_1_group_5','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
 
-                                                    </div>
-                                                </span>
-                                            </label>
-                                        </div>
-
-                                        <!--Cinturon de Herraje-->
-                                        <div class="item">
-                                            <input data-price="6" data-label="Cinturon de Herraje" id="answer_2_group_5" name="answers_5[]" type="checkbox" value="Cinturon de Herraje" class="">
-                                            <label for="answer_2_group_5" class="clearfix" onclick="changeFondo('images/cinturon-herraje.png')">
-                                                <span class="item_thumb">
-                                                    <img src="images/cinturon-herraje.png" alt="" class="img-fluid">
-                                                </span>
-                                                <!--<span class="item_price">$145.00</span>-->
-                                                <strong>Cinturon de Herraje</strong>
-                                                Cinturon de Piel Sintetica con aplicaciones de herrajes y diseños cincelados. Tallas: Mediana/M), Largo (L) y Extra Largo (XL) , Surtidos
-                                                <br><br>
-                                                <span>
-                                                    <!-- Split dropup button -->
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" class="btn btn-secondary btn-sm">
-                                                            Cantidad de pedido
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_5','6')">6 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_5','12')">12 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_5','18')">18 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_5','24')">24 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_5','48')">48 Piezas</a>
-                                                            <a class="dropdown-item" onclick="changeParentAmount('answer_2_group_5','60')">60 Piezas</a>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <!-- 
+                      <!--Cinturon de Herraje-->
+                      <div class="item">
+                        <input
+                          data-price="6"
+                          data-label="Cinturon de Herraje"
+                          id="answer_2_group_5"
+                          name="answers_5[]"
+                          type="checkbox"
+                          value="Cinturon de Herraje"
+                          class=""
+                        />
+                        <label
+                          for="answer_2_group_5"
+                          class="clearfix"
+                          onclick="changeFondo('images/cinturon-herraje.png')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/cinturon-herraje.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <!--<span class="item_price">$145.00</span>-->
+                          <strong>Cinturon de Herraje</strong>
+                          Cinturon de Piel Sintetica con aplicaciones de
+                          herrajes y diseños cincelados. Tallas: Mediana/M),
+                          Largo (L) y Extra Largo (XL) , Surtidos
+                          <br /><br />
+                          <span>
+                            <!-- Split dropup button -->
+                            <div class="btn-group dropup">
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                              >
+                                Cantidad de pedido
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_5','6')"
+                                  >6 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_5','12')"
+                                  >12 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_5','18')"
+                                  >18 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_5','24')"
+                                  >24 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_5','48')"
+                                  >48 Piezas</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="changeParentAmount('answer_2_group_5','60')"
+                                  >60 Piezas</a
+                                >
+                              </div>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- 
 ////////////////////////////////////Cinturon/////////////////
                                     -->
-                                    <!-- /group_items -->
+                    <!-- /group_items -->
 
-
-
-                                    <!-- 
+                    <!-- 
 ////////////////////////////////////Accesorios/////////////////
                                     -->
-                                    <div class="group_items">
-                                        <h4>Displays</h4>
-                                        <a href="#0" data-toggle="modal" data-target="#section_info">¿Como saber cuando ocupo un Display en mi tienda?</a>
+                    <div class="group_items">
+                      <h4>Displays</h4>
+                      <a
+                        href="#0"
+                        data-toggle="modal"
+                        data-target="#section_info"
+                        >¿Como saber cuando ocupo un Display en mi tienda?</a
+                      >
+
+                      <!--Display Sombrero de Palma-->
+                      <div class="item">
+                        <input
+                          data-price="64"
+                          data-label="Display de Sombreros de
+ Palma"
+                          id="answers_6_1"
+                          type="checkbox"
+                          name="answers_6[]"
+                          value="Display de Sombreros de
+ Palma - 64 pz"
+                        />
+                        <label
+                          for="answers_6_1"
+                          class="clearfix"
+                          onclick="changeFondo('images/display-sombreros-palma.png')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/display-sombreros-palma.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <!--<span class="item_price">$30.00</span>-->
+                          <strong>Display de Sombreros de Palma</strong>
+                          Display Surtido Con 64 Sombreros de Palma en los
+                          diferentes diseños manejados (6)<br />
+                          Cantidad: 64 Piezas
+                        </label>
+                      </div>
+
+                      <!-- Display  de Cartera Mexicana Galoneada-->
+                      <div class="item">
+                        <input
+                          data-price="36"
+                          data-label="Display  de
+ Cartera Mexicana Galoneada"
+                          id="answers_6_2"
+                          name="answers_6[]"
+                          type="checkbox"
+                          value="Display  de
+ Cartera Mexicana Galoneada - 36 pz"
+                          class=""
+                        />
+                        <label
+                          for="answers_6_2"
+                          class="clearfix"
+                          onclick="changeFondo('images/display-cartera-galoneada.png')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/display-cartera-galoneada.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+                          <!--<span class="item_price">$120.00</span>-->
+                          <strong>Display de Cartera Mexicana Galoneada</strong>
+                          Display surtido con 36 carteras mexicanas de piel en
+                          diseños galoneados con nombres de estados o diseños
+                          vaqueros (gallos y caballos)
+                          <br />Cantidad: 36 Piezas
+                        </label>
+                      </div>
+
+                      <!--Display  de Pulsera Mexicana-->
+                      <div class="item">
+                        <input
+                          data-price="64"
+                          data-label="Display  de
+ Pulsera Mexicana"
+                          id="answers_6_3"
+                          name="answers_6[]"
+                          type="checkbox"
+                          value="Display  de
+ Pulsera Mexicana - 64 pz"
+                          class=""
+                        />
+                        <label
+                          for="answers_6_3"
+                          class="clearfix"
+                          onclick="changeFondo('images/Display-de-Pulsera.jpg')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/Display-de-Pulsera.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+
+                          <strong>Display de Pulsera Mexicana</strong>
+                          Display Surtido con 192 Pulseras (16 docenas) en
+                          diferentes diseños y colores, con diseños religiosos.
+                          <br />Cantidad: 64 Piezas
+                        </label>
+                      </div>
+
+                      <!--Display  de Funda de Celular-->
+                      <div class="item">
+                        <input
+                          data-price="24"
+                          data-label="Display  de Funda de Celular"
+                          id="answers_6_4"
+                          name="answers_6[]"
+                          type="checkbox"
+                          value="Display  de Funda de Celular - 24 pz"
+                          class=""
+                        />
+                        <label
+                          for="answers_6_4"
+                          class="clearfix"
+                          onclick="changeFondo('images/Display-de-Funda-de-Celular.jpg')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/Display-de-Funda-de-Celular.jpg"
+                              alt="Display-Funda-de-celulares-ritoz"
+                              class="img-fluid"
+                            />
+                          </span>
+
+                          <strong>Display de Funda de Celular</strong>
+                          Display Surtido con 24 Fundas de Celular Vaqueras en
+                          diferentes diseños.
+                          <br />Cantidad: 24 Piezas
+                        </label>
+                      </div>
+
+                      <!--Display  de Gorras-->
+                      <div class="item">
+                        <input
+                          data-price="36"
+                          data-label="Display  de Gorras"
+                          id="answers_6_5"
+                          name="answers_6[]"
+                          type="checkbox"
+                          value="Display  de Gorras - 36 pz"
+                          class=""
+                        />
+                        <label
+                          for="answers_6_5"
+                          class="clearfix"
+                          onclick="changeFondo('img/optional_3.jpg')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="img/optional_3.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+
+                          <strong>Display de Gorras</strong>
+                          Display Surtido con 36 Gorras mexicanas.
+                          <br />Cantidad: 36 Piezas
+                        </label>
+                      </div>
+
+                       <!--Display  Cinto Laser-->
+                       <div class="item">
+                        <input
+                          data-price="36"
+                          data-label="Display Cinto Laser"
+                          id="answers_6_6"
+                          name="answers_6[]"
+                          type="checkbox"
+                          value="Display Cinto Laser - 36 pz"
+                          class=""
+                        />
+                        <label
+                          for="answers_6_6"
+                          class="clearfix"
+                          onclick="changeFondo('images/Display-Cinto-Laser.jpg')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/Display-Cinto-Laser.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+
+                          <strong>Display Cinto Laser</strong>
+                          Display Surtido con 36 Cintos tipo Laser.
+                          <br />Cantidad: 36 Piezas
+                        </label>
+                      </div>
+
+                      <!--Display  Cartera Estados-->
+                      <div class="item">
+                        <input
+                          data-price="36"
+                          data-label="Display  Cartera Estados"
+                          id="answers_6_7"
+                          name="answers_6[]"
+                          type="checkbox"
+                          value="Display  Cartera Estados - 36 pz"
+                          class=""
+                        />
+                        <label
+                          for="answers_6_7"
+                          class="clearfix"
+                          onclick="changeFondo('images/Display-de-Cartera-de-Estados.jpg')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/Display-de-Cartera-de-Estados.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+
+                          <strong>Display  Cartera Estados</strong>
+                          Display Surtido con 36 Carteras de los estados.
+                          <br />Cantidad: 36 Piezas
+                        </label>
+                      </div>
+
+                       <!--Display  Gorras G-->
+                       <div class="item">
+                        <input
+                          data-price="36"
+                          data-label="Display  Gorras G"
+                          id="answers_6_8"
+                          name="answers_6[]"
+                          type="checkbox"
+                          value="Display  Gorras G - 36 pz"
+                          class=""
+                        />
+                        <label
+                          for="answers_6_8"
+                          class="clearfix"
+                          onclick="changeFondo('images/Display-de-Gorras-G.jpg')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/Display-de-Gorras-G.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
+
+                          <strong>Display  Gorras G</strong>
+                          Display Surtido con 36 Gorras G.
+                          <br />Cantidad: 36 Piezas
+                        </label>
+                      </div>
 
 
+                      <!--Display  de Rosarios-->
+                      <div class="item">
+                        <input
+                          data-price="36"
+                          data-label="Display  de Rosarios"
+                          id="answers_6_9"
+                          name="answers_6[]"
+                          type="checkbox"
+                          value="Display  de Rosarios - 36 pz"
+                          class=""
+                        />
+                        <label
+                          for="answers_6_9"
+                          class="clearfix"
+                          onclick="changeFondo('images/Display-de-Rosario.jpg')"
+                        >
+                          <span class="item_thumb">
+                            <img
+                              src="images/Display-de-Rosario.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </span>
 
-                                        <!--Display Sombrero de Palma-->
-                                        <div class="item">
-                                            <input data-price="64" data-label="Display de Sombreros de
- Palma" id="answers_6_1" type="checkbox" name="answers_6[]" value="Display de Sombreros de
- Palma - 64 pz">
-                                            <label for="answers_6_1" class="clearfix" onclick="changeFondo('images/display-sombreros-palma.png')">
-                                                <span class="item_thumb">
-                                                    <img src="images/display-sombreros-palma.png" alt="" class="img-fluid">
-                                                </span>
-                                                <!--<span class="item_price">$30.00</span>-->
-                                                <strong>Display de Sombreros de Palma</strong>
-                                                Display Surtido Con 64 Sombreros de Palma en los diferentes diseños manejados (6)<br>
-                                                Cantidad: 64 Piezas
-                                            </label>
-                                        </div>
-
-                                        <!-- Display  de Cartera Mexicana Galoneada-->
-                                        <div class="item">
-                                            <input data-price="36" data-label="Display  de
- Cartera Mexicana Galoneada" id="answers_6_2" name="answers_6[]" type="checkbox" value="Display  de
- Cartera Mexicana Galoneada - 36 pz" class="">
-                                            <label for="answers_6_2" class="clearfix" onclick="changeFondo('images/display-cartera-galoneada.png')">
-                                                <span class="item_thumb">
-                                                    <img src="images/display-cartera-galoneada.png" alt="" class="img-fluid">
-                                                </span>
-                                                <!--<span class="item_price">$120.00</span>-->
-                                                <strong>Display de Cartera Mexicana Galoneada</strong>
-                                                Display surtido con 36 carteras mexicanas de piel en diseños galoneados con nombres de estados o diseños vaqueros (gallos y caballos)
-                                                <br>Cantidad: 36 Piezas
-
-                                            </label>
-                                        </div>
-
-                                        <!--Display  de Pulsera Mexicana-->
-                                        <div class="item">
-                                            <input data-price="64" data-label="Display  de
- Pulsera Mexicana" id="answers_6_3" name="answers_6[]" type="checkbox" value="Display  de
- Pulsera Mexicana - 64 pz" class="">
-                                            <label for="answers_6_3" class="clearfix" onclick="changeFondo('images/display-pulsera-mexicana.png')">
-                                                <span class="item_thumb">
-                                                    <img src="images/display-pulsera-mexicana.png" alt="" class="img-fluid">
-                                                </span>
-
-                                                <strong>Display de Pulsera Mexicana</strong>
-                                                Display Surtido con 192 Pulseras (16 docenas) en diferentes diseños y colores, con diseños religiosos.
-                                                <br>Cantidad: 64 Piezas
-                                            </label>
-                                        </div>
-
-                                        <!--Display  de
- Funda de Celular-->
-                                        <div class="item">
-                                            <input data-price="24" data-label="Display  de
- Funda de Celular" id="answers_6_4" name="answers_6[]" type="checkbox" value="Display  de
- Funda de Celular - 24 pz" class="">
-                                            <label for="answers_6_4" class="clearfix" onclick="changeFondo('img/optional_3.jpg')">
-                                                <span class="item_thumb">
-                                                    <img src="img/optional_3.jpg" alt="" class="img-fluid">
-                                                </span>
-
-                                                <strong>Display de Funda de Celular</strong>
-                                                Display Surtido con 24 Fundas de Celular Vaqueras en diferentes diseños.
-                                                <br>Cantidad: 24 Piezas
-                                            </label>
-                                        </div>
-
-                                        <!--Display  de Gorras-->
-                                        <div class="item">
-                                            <input data-price="36" data-label="Display  de Gorras" id="answers_6_5" name="answers_6[]" type="checkbox" value="Display  de Gorras - 36 pz" class="">
-                                            <label for="answers_6_5" class="clearfix" onclick="changeFondo('img/optional_3.jpg')">
-                                                <span class="item_thumb">
-                                                    <img src="img/optional_3.jpg" alt="" class="img-fluid">
-                                                </span>
-
-                                                <strong>Display de Gorras</strong>
-                                                Display Surtido con 36 Gorras mexicanas.
-                                                <br>Cantidad: 36 Piezas
-                                            </label>
-                                        </div>
+                          <strong>Display  de Rosarios</strong>
+                          Display Surtido con 36 Rosarios.
+                          <br />Cantidad: 36 Piezas
+                        </label>
+                      </div>
 
 
-                                    </div>
-                                    <!-- /group_items-->
-                                </div>
-                                <!-- /step-->
-                                <!-- Last step ============================== -->
-                                <div class="submit step">
-                                    <div class="question_title add_bottom_30">
-                                        <h3>Por favor llena los siguientes campos</h3>
-                                        <!--<p>Ei duo homero postea dignissim.</p>-->
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="first_last_name" class=" form-control" placeholder="Nombre y apellido">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" name="email" class=" form-control" placeholder="Tu Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="telephone" class="form-control" placeholder="Tu telefono">
-                                    </div>
-                                    <div class="form-group add_bottom_30">
-                                        <div class="styled-select">
-                                            <select class="" name="country">
-                                                <option value="" selected>Escoje tu estado</option>
-                                                <option value="slp">San Luis Potosi</option>
-                                                <option value="mty">Monterrey</option>
-                                                <option value="qrt">Queretaro</option>
-                                                <option value="gdl">Guadalajara</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="checkbox_questions">
-                                        <input name="terms" type="checkbox" class="icheck required" value="yes">
-                                        <label>Por favor revisa &amp; acepta nuestros <a href="#" data-toggle="modal" data-target="#terms-txt">terminos &amp; condiciones</a>.</label>
-                                    </div>
-                                </div>
-                                <!-- /Last step ============================== -->
-                            </div>
-                            <!-- /col -->
-                        </div>
-                        <!-- /row -->
+                         <!--Display  de Gorra Red
+                         <div class="item">
+                          <input
+                            data-price="36"
+                            data-label="Display  de Gorra Red"
+                            id="answers_6_10"
+                            name="answers_6[]"
+                            type="checkbox"
+                            value="Display  de Gorra Red - 36 pz"
+                            class=""
+                          />
+                          <label
+                            for="answers_6_10"
+                            class="clearfix"
+                            onclick="changeFondo('images/Display-Gorra-Red.jpg')"
+                          >
+                            <span class="item_thumb">
+                              <img
+                                src="images/Display-Gorra-Red.jpg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </span>
+  
+                            <strong>Display  de Gorra Red</strong>
+                            Display Surtido con 36 Gorras Red.
+                            <br />Cantidad: 36 Piezas
+                          </label>
+                        </div>-->
+
+                          <!--Display  de Gorra Red Eagle-->
+                          <div class="item">
+                            <input
+                              data-price="36"
+                              data-label="Display  de Gorra Red Eagle"
+                              id="answers_6_10"
+                              name="answers_6[]"
+                              type="checkbox"
+                              value="Display  de Gorra Red Eagle - 36 pz"
+                              class=""
+                            />
+                            <label
+                              for="answers_6_10"
+                              class="clearfix"
+                              onclick="changeFondo('images/Display-Gorra-Red-Eagle.jpg')"
+                            >
+                              <span class="item_thumb">
+                                <img
+                                  src="images/Display-Gorra-Red-Eagle.jpg"
+                                  alt=""
+                                  class="img-fluid"
+                                />
+                              </span>
+    
+                              <strong>Display  de Gorra Red Eagle</strong>
+                              Display Surtido con 36 Gorras Red Eagle.
+                              <br />Cantidad: 36 Piezas
+                            </label>
+                          </div>
+
+
                     </div>
-                    <!-- /middle-wizard -->
-                    <div id="bottom-wizard">
-                        <div class="float-right clearfix">
-                            <button type="button" name="backward" class="backward">Atras </button>
-                            <button type="button" name="forward" class="forward">Siguiente</button>
-                            <button type="submit" name="process" class="submit">Enviar</button>
-                        </div>
+                    <!-- /group_items-->
+                  </div>
+                  <!-- /step-->
+                  <!-- Last step ============================== -->
+                  <div class="submit step">
+                    <div class="question_title add_bottom_30">
+                      <h3>Por favor llena los siguientes campos</h3>
+                      <!--<p>Ei duo homero postea dignissim.</p>-->
                     </div>
-                    <!-- /bottom-wizard -->
-
-                    <input type="hidden" id="hidden_total" name="hidden_total">
-                    <!-- /Hidden total input -->
-                </form>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="first_last_name"
+                        class="form-control"
+                        placeholder="Nombre y apellido"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="Tu Email"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="telephone"
+                        class="form-control"
+                        placeholder="Tu telefono"
+                      />
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="adress"
+                          class="form-control"
+                          placeholder="Tu direccion"
+                        />
+                    </div>
+                    <div class="form-group add_bottom_30">
+                      <div class="styled-select">
+                        <select class="" name="country">
+                          <option value="" selected>Escoje tu estado</option>
+                         
+	<option value="AGS">Aguascalientes</option>
+	<option value="BCN">Baja California</option>
+	<option value="BCS">Baja California Sur</option>
+	<option value="CAM">Campeche</option>
+	<option value="CHP">Chiapas</option>
+	<option value="CHI">Chihuahua</option>
+	<option value="COA">Coahuila</option>
+	<option value="COL">Colima</option>
+	<option value="DUR">Durango</option>
+	<option value="GTO">Guanajuato</option>
+	<option value="GRO">Guerrero</option>
+	<option value="HGO">Hidalgo</option>
+	<option value="JAL">Jalisco</option>
+	<option value="MEX">M&eacute;xico</option>
+	<option value="MIC">Michoac&aacute;n</option>
+	<option value="MOR">Morelos</option>
+	<option value="NAY">Nayarit</option>
+	<option value="NLE">Nuevo Le&oacute;n</option>
+	<option value="OAX">Oaxaca</option>
+	<option value="PUE">Puebla</option>
+	<option value="QRO">Quer&eacute;taro</option>
+	<option value="ROO">Quintana Roo</option>
+	<option value="SLP">San Luis Potos&iacute;</option>
+	<option value="SIN">Sinaloa</option>
+	<option value="SON">Sonora</option>
+	<option value="TAB">Tabasco</option>
+	<option value="TAM">Tamaulipas</option>
+	<option value="TLX">Tlaxcala</option>
+	<option value="VER">Veracruz</option>
+	<option value="YUC">Yucat&aacute;n</option>
+	<option value="ZAC">Zacatecas</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="checkbox_questions">
+                      <input
+                        name="terms"
+                        type="checkbox"
+                        class="icheck required"
+                        value="yes"
+                      />
+                      <label
+                        >Por favor revisa &amp; acepta nuestros
+                        <a href="#" data-toggle="modal" data-target="#terms-txt"
+                          >terminos &amp; condiciones</a
+                        >.</label
+                      >
+                    </div>
+                  </div>
+                  <!-- /Last step ============================== -->
+                </div>
+                <!-- /col -->
+              </div>
+              <!-- /row -->
             </div>
-            <!-- /Wizard container -->
+            <!-- /middle-wizard -->
+            <div id="bottom-wizard">
+              <div class="float-right clearfix">
+                <button type="button" name="backward" class="backward">
+                  Atras
+                </button>
+                <button type="button" name="forward" class="forward">
+                  Siguiente
+                </button>
+                <button type="submit" name="process" class="submit">
+                  Enviar
+                </button>
+              </div>
+            </div>
+            <!-- /bottom-wizard -->
+
+            <input type="hidden" id="hidden_total" name="hidden_total" />
+            <!-- /Hidden total input -->
+          </form>
         </div>
-        <!-- /Container -->
+        <!-- /Wizard container -->
+      </div>
+      <!-- /Container -->
     </main>
     <!-- /main -->
 
     <div class="cd-overlay-nav">
-        <span></span>
+      <span></span>
     </div>
     <!-- /cd-overlay-nav -->
 
     <div class="cd-overlay-content">
-        <span></span>
+      <span></span>
     </div>
     <!-- /cd-overlay-content -->
 
     <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
     <!-- /cd-nav-trigger -->
 
+    <a class="whatsapp-icon" target="_blank" href="https://api.whatsapp.com/send?phone=524444391644">
+      
+      <i class="hs-icon">
+      <i class="fa fa-whatsapp"></i>
+      </i>
+      
+      </a>
+      
     <!-- Modal terms -->
-    <div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="termsLabel">Terminos &amp; Condiciones</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
-                    <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
-                    <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="terms-txt"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="termsLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="termsLabel">
+              Terminos &amp; Condiciones
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet, in porro albucius qui, in
+              <strong>nec quod novum accumsan</strong>, mei ludus tamquam
+              dolores id. No sit debitis meliore postulant, per ex prompta
+              alterum sanctus, pro ne quod dicunt sensibus.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod
+              novum accumsan, mei ludus tamquam dolores id. No sit debitis
+              meliore postulant, per ex prompta alterum sanctus, pro ne quod
+              dicunt sensibus. Lorem ipsum dolor sit amet,
+              <strong>in porro albucius qui</strong>, in nec quod novum
+              accumsan, mei ludus tamquam dolores id. No sit debitis meliore
+              postulant, per ex prompta alterum sanctus, pro ne quod dicunt
+              sensibus.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod
+              novum accumsan, mei ludus tamquam dolores id. No sit debitis
+              meliore postulant, per ex prompta alterum sanctus, pro ne quod
+              dicunt sensibus.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
     <!-- /Modal terms -->
 
     <!-- Modal product section info -->
-    <div class="modal fade" id="section_info" tabindex="-1" role="dialog" aria-labelledby="section_info_title" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="section_info_title">¿Como saber cuando ocupo un Display en mi tienda?</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Lorem ipsum dolor sit amet, justo omnes deserunt mei eu, idque mazim scripserit per an. Cum dictas sanctus constituto in. Sapientem interpretaris ne per, dolor dolore laboramus per ne. Ne vis case mollis offendit. At ius epicuri luptatum, has ad malorum sapientem, quo tollit intellegat ex. Tollit utroque ex mei, cum exerci postea signiferumque at, eam cu primis timeam intellegebat. Eos reque ullamcorper id, in vidit suavitate nec.</p>
-                    <p>Purto omnis voluptua ex per, ei quando consul nominavi duo, et duo tale novum aliquando. Mei dicat simul pericula te, et saepe homero delicatissimi eos. Eam eu tempor mentitum pertinax. Hinc nibh vix eu.</p>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="section_info"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="section_info_title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="section_info_title">
+              ¿Como saber cuando ocupo un Display en mi tienda?
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet, justo omnes deserunt mei eu, idque
+              mazim scripserit per an. Cum dictas sanctus constituto in.
+              Sapientem interpretaris ne per, dolor dolore laboramus per ne. Ne
+              vis case mollis offendit. At ius epicuri luptatum, has ad malorum
+              sapientem, quo tollit intellegat ex. Tollit utroque ex mei, cum
+              exerci postea signiferumque at, eam cu primis timeam intellegebat.
+              Eos reque ullamcorper id, in vidit suavitate nec.
+            </p>
+            <p>
+              Purto omnis voluptua ex per, ei quando consul nominavi duo, et duo
+              tale novum aliquando. Mei dicat simul pericula te, et saepe homero
+              delicatissimi eos. Eam eu tempor mentitum pertinax. Hinc nibh vix
+              eu.
+            </p>
+          </div>
+          
+
         </div>
+      </div>
     </div>
 
     <!-- COMMON SCRIPTS -->
@@ -983,12 +2344,9 @@
     <!-- SPECIFIC SCRIPTS -->
     <script src="js/theia-sticky-sidebar.js"></script>
     <script type="text/javascript">
-        jQuery('.content_sticky').theiaStickySidebar({
-            additionalMarginTop: 30
-        });
-
+      jQuery(".content_sticky").theiaStickySidebar({
+        additionalMarginTop: 30,
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
