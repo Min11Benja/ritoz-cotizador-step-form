@@ -10,7 +10,7 @@
     <title>RitozImports | Cotizador en linea | Pedidos mayoreo</title>
 
     <!-- Favicons-->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/ritoz-favicon-16x16.png" type="image/x-icon">
 
     <!-- BASE CSS -->
     <link href="css/style.css" rel="stylesheet">
