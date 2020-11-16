@@ -97,3 +97,22 @@ a:not([href]):not([tabindex]):hover {
   color: #fff;
   text-decoration: none;
 }
+/*sticky image on responsive*/
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-width: 370px) and (max-width: 991px) {
+  /* Styles */
+  .col-lg-5.content_sticky.magnific-gallery {
+    position: sticky !important;
+    top: 0px;
+    z-index: 3;
+  }
+  img#product-preview-img {
+    border: solid 3px red;
+  }
+  .add_top_50 {
+    margin-top: 5px;
+  }
+  .add_top_30 {
+    margin-top: 0px;
+  }
+}
