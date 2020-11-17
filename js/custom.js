@@ -21,3 +21,19 @@ function changeParentAmount(inputIdToEdit, qtyClickSelected) {
 
     document.getElementById(inputIdToEdit).value = newValueLabelTxt;
 }
+
+/* Editar telefono si es en USA o en Mexico */
+$.get("https://ipinfo.io", function(response) {
+    if(response.country === "US") {
+        $("#welcome-msg-country").html("Welcome, America!");
+        /* whatsapp url USA telefono */
+        $(".whatsapp-icon").attr("href", "https://api.whatsapp.com/send?phone=+16825549050");
+    }
+    else if(response.country === "MX") {
+        $("#welcome-msg-country").html("Bienvenido, Mexico!");
+        /* whatsapp url mexico telefono */
+        $(".whatsapp-icon").attr("href", "https://api.whatsapp.com/send?phone=+524448002313");
+    }
+    
+}, "jsonp");
+
